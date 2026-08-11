@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<title>Meds</title>
+<style>
+:root{
+  --bg:#050505; --card:rgba(9,13,12,0.72); --border:rgba(148,163,158,0.16);
+  --text:#E7ECEA; --muted:#94A39E; --faint:#5C6B66;
+  --mint:#6EE7B7; --amber:#FCD34D;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;height:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:rgba(110,231,183,.28)}
+
+#vposter{display:none}
+html.posterMode body{background:transparent}
+html.posterMode main.page{display:none}
+html.posterMode #vposter{display:flex}
+#vposter{
+  position:fixed;inset:0;flex-direction:column;justify-content:space-between;
+  padding:16px 18px;overflow:hidden;
+}
+.pEyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:9.5px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.pRow{display:flex;align-items:baseline;gap:6px}
+.pNum{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:34px;
+  color:var(--text);line-height:1}
+.pUnit{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;
+  color:var(--faint);letter-spacing:.08em}
+
+main.page{display:none;min-height:100%;background:var(--bg)}
+html:not(.posterMode) main.page{display:block}
+.shell{
+  max-width:420px;margin:0 auto;padding:28px 20px calc(28px + env(safe-area-inset-bottom));
+  opacity:0;transform:translateY(8px);animation:riseIn .6s ease forwards;
+}
+@keyframes riseIn{to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){.shell{animation:none;opacity:1;transform:none}}
+
+.eyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+.heroRow{display:flex;align-items:baseline;gap:10px;margin-bottom:6px}
+.hero{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:44px;
+  color:var(--text);line-height:1}
+.heroUnit{font-size:14px;color:var(--faint)}
+.pill{
+  border:1px solid rgba(110,231,183,.35);border-radius:999px;padding:3px 10px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;
+  color:var(--mint);letter-spacing:.08em;white-space:nowrap;
+}
+.statusRow{margin-bottom:26px}
+
+.btn{
+  display:block;width:100%;border:none;border-radius:999px;padding:16px;
+  background:var(--mint);color:#04120c;font-family:-apple-system,Inter,sans-serif;
+  font-size:15px;font-weight:600;cursor:pointer;min-height:40px;
+  transition:transform .15s ease, background .15s ease, color .15s ease;
+}
+.btn.done{background:var(--card);color:var(--mint);border:1px solid rgba(110,231,183,.35)}
+.btn:active{transform:scale(.97)}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}.btn:active{transform:none;opacity:.8}}
+
+.section{margin-top:32px}
+.sectionTitle{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin:0 0 12px}
+.grid7{display:flex;gap:8px;padding:12px;background:var(--card);border:1px solid var(--border);border-radius:16px}
+.dot{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px}
+.dotMark{width:100%;aspect-ratio:1;border-radius:8px;border:1px solid var(--border);background:transparent}
+.dotMark.on{background:var(--mint);border-color:var(--mint)}
+.dotLbl{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8.5px;color:var(--faint)}
+</style>
+<script>if(!/page/.test(location.hash)&&window.self!==window.top)document.documentElement.className+=' posterMode'</script>
+</head>
+<body>
+
+<div id="vposter" aria-hidden="true">
+  <span class="pEyebrow">Meds</span>
+  <div class="pRow"><span class="pNum" id="pNum">Not yet</span></div>
+</div>
+
+<main class="page">
+  <div class="shell">
+    <p class="eyebrow">Meds</p>
+    <div class="heroRow">
+      <span class="hero" id="heroNum">Not yet</span>
+    </div>
+    <div class="statusRow"><span class="pill" id="streakPill">no streak yet</span></div>
+
+    <button class="btn" id="toggleBtn" type="button">Mark taken</button>
+
+    <div class="section">
+      <p class="sectionTitle">Last 7 days</p>
+      <div id="chart"></div>
+    </div>
+  </div>
+</main>
+
+<script>
+(function(){
+  'use strict';
+
+  var Vitality={_w:{},_sv:false,save:function(d){Vitality._sv=true;parent.postMessage({source:'vitality-tile',type:'save',data:d},'*')},load:function(){return new Promise(function(res){var id=Math.random().toString(36).slice(2);var ask=function(){parent.postMessage({source:'vitality-tile',type:'load',id:id},'*')};var n=0;var t=setInterval(function(){n++;if(n===1){ask();return}clearInterval(t);if(Vitality._w[id]){Vitality._w[id]=function(d){if(d!=null&&!Vitality._sv)location.reload()};res(null)}},3000);Vitality._w[id]=function(d){clearInterval(t);res(d)};ask()})},report:function(s){parent.postMessage({source:'vitality-tile',type:'report',stream:s},'*')}};
+  window.addEventListener('message', function (e) {
+    var m = e.data;
+    if (!m || m.source !== 'vitality-host') return;
+    if (m.type === 'load:result' && Vitality._w[m.id]) { Vitality._w[m.id](m.data); delete Vitality._w[m.id]; return }
+    if (m.type === 'save:error') { note('That save did not stick. Try again.') }
+    else if (m.type === 'report:error') { note('That log did not land yet.') }
+  });
+  if (window.self === window.top) {
+    window.Vitality = {
+      save: function(d){ try{ localStorage.setItem('v:meds', JSON.stringify(d)) }catch(e){} return Promise.resolve(true) },
+      load: function(){ try{ return Promise.resolve(JSON.parse(localStorage.getItem('v:meds')||'null')) }catch(e){ return Promise.resolve(null) } },
+      report: function(){}
+    };
+    Vitality = window.Vitality;
+  }
+
+  function note(t){
+    var n = document.getElementById('note');
+    if (!n) { n = document.createElement('div'); n.id = 'note'; n.style.cssText='margin-top:10px;font-size:12px;color:#FCD34D;text-align:center'; document.querySelector('.shell').appendChild(n) }
+    n.textContent = t;
+  }
+
+  function todayKey(){
+    var d = new Date();
+    return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  }
+  function dayKeyOffset(n){
+    var d = new Date();
+    d.setDate(d.getDate() - n);
+    return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  }
+
+  var store = { days: {} };
+
+  function isDoneToday(){ return !!store.days[todayKey()] }
+
+  function render(){
+    var done = isDoneToday();
+    document.getElementById('pNum').textContent = done ? 'Taken' : 'Not yet';
+    document.getElementById('heroNum').textContent = done ? 'Taken' : 'Not yet';
+    var btn = document.getElementById('toggleBtn');
+    btn.textContent = done ? 'Marked taken' : 'Mark taken';
+    btn.classList.toggle('done', done);
+
+    var streak = 0, i = 0;
+    while (true) {
+      var k = dayKeyOffset(i);
+      if (store.days[k]) { streak++; i++ } else break;
+    }
+    document.getElementById('streakPill').textContent = streak > 0 ? (streak + ' day streak') : 'no streak yet';
+
+    var days = [];
+    for (var j = 6; j >= 0; j--) days.push(dayKeyOffset(j));
+    var html = '<div class="grid7">';
+    days.forEach(function(k, idx){
+      var on = !!store.days[k];
+      var lbl = new Date(k + 'T00:00:00').toLocaleDateString(undefined, { weekday: 'narrow' });
+      html += '<div class="dot"><div class="dotMark' + (on ? ' on' : '') + '"></div><span class="dotLbl">' + lbl + '</span></div>';
+    });
+    html += '</div>';
+    document.getElementById('chart').innerHTML = html;
+  }
+
+  function reportToday(){
+    Vitality.report({ key: 'meds', label: 'Meds', value: isDoneToday() ? 1 : 0, date: todayKey(), kind: 'done', goalDirection: 'up' });
+  }
+
+  document.getElementById('toggleBtn').addEventListener('click', function(){
+    var k = todayKey();
+    store.days[k] = !store.days[k];
+    if (!store.days[k]) delete store.days[k];
+    render();
+    Vitality.save(store);
+    reportToday();
+  });
+
+  Promise.resolve(Vitality.load()).then(function(d){
+    if (d && typeof d === 'object' && d.days) store = d;
+    render();
+  });
+})();
+</script>
+</body>
+</html>

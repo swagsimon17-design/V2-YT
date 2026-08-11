@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<title>Rent</title>
+<style>
+:root{
+  --bg:#050505; --card:rgba(9,13,12,0.72); --border:rgba(148,163,158,0.16);
+  --text:#E7ECEA; --muted:#94A39E; --faint:#5C6B66;
+  --mint:#6EE7B7; --amber:#FCD34D;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;height:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:rgba(110,231,183,.28)}
+
+#vposter{display:none}
+html.posterMode body{background:transparent}
+html.posterMode main.page{display:none}
+html.posterMode #vposter{display:flex}
+#vposter{
+  position:fixed;inset:0;flex-direction:column;justify-content:space-between;
+  padding:16px 18px;overflow:hidden;
+}
+.pEyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:9.5px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.pRow{display:flex;align-items:baseline;gap:6px}
+.pNum{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:34px;
+  color:var(--text);line-height:1}
+.pUnit{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;
+  color:var(--faint);letter-spacing:.08em}
+
+main.page{display:none;min-height:100%;background:var(--bg)}
+html:not(.posterMode) main.page{display:block}
+.shell{
+  max-width:420px;margin:0 auto;padding:28px 20px calc(28px + env(safe-area-inset-bottom));
+  opacity:0;transform:translateY(8px);animation:riseIn .6s ease forwards;
+}
+@keyframes riseIn{to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){.shell{animation:none;opacity:1;transform:none}}
+
+.eyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+.heroRow{display:flex;align-items:baseline;gap:10px;margin-bottom:6px}
+.hero{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:48px;
+  color:var(--text);line-height:1}
+.heroUnit{font-size:14px;color:var(--faint)}
+.pill{
+  border:1px solid rgba(110,231,183,.35);border-radius:999px;padding:3px 10px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;
+  color:var(--mint);letter-spacing:.08em;white-space:nowrap;
+}
+.statusRow{margin-bottom:26px}
+
+.inputRow{display:flex;gap:10px}
+.numInput{
+  flex:1;min-width:0;border:1px solid var(--border);border-radius:14px;
+  background:var(--card);color:var(--text);font-size:16px;padding:14px;
+  font-family:-apple-system,Inter,sans-serif;min-height:40px;
+}
+.numInput:focus{outline:none;border-color:rgba(110,231,183,.5)}
+.btn{
+  border:none;border-radius:999px;padding:0 22px;
+  background:var(--mint);color:#04120c;font-family:-apple-system,Inter,sans-serif;
+  font-size:15px;font-weight:600;cursor:pointer;min-height:40px;white-space:nowrap;
+  transition:transform .15s ease, opacity .15s ease;
+}
+.btn:active{transform:scale(.97)}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}.btn:active{transform:none;opacity:.8}}
+
+.section{margin-top:32px}
+.sectionTitle{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin:0 0 12px}
+.hist{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:6px 14px}
+.histRow{display:flex;justify-content:space-between;align-items:center;padding:10px 0;
+  border-bottom:1px solid var(--border);font-size:13px}
+.histRow:last-child{border-bottom:none}
+.histDate{color:var(--muted);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px}
+.histAmt{color:var(--text);font-weight:600}
+.empty{font-size:13px;color:var(--faint);text-align:center;padding:18px 0}
+</style>
+<script>if(!/page/.test(location.hash)&&window.self!==window.top)document.documentElement.className+=' posterMode'</script>
+</head>
+<body>
+
+<div id="vposter" aria-hidden="true">
+  <span class="pEyebrow">Rent</span>
+  <div class="pRow"><span class="pNum" id="pNum">0</span><span class="pUnit">CHF, this month</span></div>
+</div>
+
+<main class="page">
+  <div class="shell">
+    <p class="eyebrow">Rent</p>
+    <div class="heroRow">
+      <span class="hero" id="heroNum">0</span>
+      <span class="heroUnit">CHF, this month</span>
+    </div>
+    <div class="statusRow"><span class="pill" id="statusPill">not paid this month</span></div>
+
+    <div class="inputRow">
+      <input class="numInput" id="amtInput" type="number" inputmode="decimal" min="0" step="0.01" placeholder="amount" />
+      <button class="btn" id="addBtn" type="button">Log payment</button>
+    </div>
+
+    <div class="section">
+      <p class="sectionTitle">Recent payments</p>
+      <div id="hist"></div>
+    </div>
+  </div>
+</main>
+
+<script>
+(function(){
+  'use strict';
+
+  var Vitality={_w:{},_sv:false,save:function(d){Vitality._sv=true;parent.postMessage({source:'vitality-tile',type:'save',data:d},'*')},load:function(){return new Promise(function(res){var id=Math.random().toString(36).slice(2);var ask=function(){parent.postMessage({source:'vitality-tile',type:'load',id:id},'*')};var n=0;var t=setInterval(function(){n++;if(n===1){ask();return}clearInterval(t);if(Vitality._w[id]){Vitality._w[id]=function(d){if(d!=null&&!Vitality._sv)location.reload()};res(null)}},3000);Vitality._w[id]=function(d){clearInterval(t);res(d)};ask()})},report:function(s){parent.postMessage({source:'vitality-tile',type:'report',stream:s},'*')}};
+  window.addEventListener('message', function (e) {
+    var m = e.data;
+    if (!m || m.source !== 'vitality-host') return;
+    if (m.type === 'load:result' && Vitality._w[m.id]) { Vitality._w[m.id](m.data); delete Vitality._w[m.id]; return }
+    if (m.type === 'save:error') { note('That save did not stick. Try again.') }
+    else if (m.type === 'report:error') { note('That log did not land yet.') }
+  });
+  if (window.self === window.top) {
+    window.Vitality = {
+      save: function(d){ try{ localStorage.setItem('v:rent', JSON.stringify(d)) }catch(e){} return Promise.resolve(true) },
+      load: function(){ try{ return Promise.resolve(JSON.parse(localStorage.getItem('v:rent')||'null')) }catch(e){ return Promise.resolve(null) } },
+      report: function(){}
+    };
+    Vitality = window.Vitality;
+  }
+
+  function note(t){
+    var n = document.getElementById('note');
+    if (!n) { n = document.createElement('div'); n.id = 'note'; n.style.cssText='margin-top:10px;font-size:12px;color:#FCD34D;text-align:center'; document.querySelector('.shell').appendChild(n) }
+    n.textContent = t;
+  }
+
+  function todayKey(){
+    var d = new Date();
+    return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  }
+  function monthKey(k){ return k.slice(0, 7) }
+  function fmt(n){
+    return (Math.round(n * 100) / 100).toString();
+  }
+
+  var store = { days: {} };
+
+  function todayAmount(){ return store.days[todayKey()] || 0 }
+
+  function monthTotal(mk){
+    var sum = 0;
+    Object.keys(store.days).forEach(function(k){ if (monthKey(k) === mk) sum += store.days[k] });
+    return sum;
+  }
+
+  function render(){
+    var thisMonth = monthKey(todayKey());
+    var total = monthTotal(thisMonth);
+    document.getElementById('pNum').textContent = fmt(total);
+    document.getElementById('heroNum').textContent = fmt(total);
+    document.getElementById('statusPill').textContent = total > 0 ? 'paid this month' : 'not paid this month';
+
+    var entries = Object.keys(store.days)
+      .filter(function(k){ return store.days[k] > 0 })
+      .sort()
+      .reverse()
+      .slice(0, 6);
+
+    var hist = document.getElementById('hist');
+    if (entries.length === 0) {
+      hist.innerHTML = '<div class="empty">no payments logged yet</div>';
+      return;
+    }
+    var html = '<div class="hist">';
+    entries.forEach(function(k){
+      var d = new Date(k + 'T00:00:00');
+      var label = d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+      html += '<div class="histRow"><span class="histDate">' + label + '</span><span class="histAmt">' + fmt(store.days[k]) + ' CHF</span></div>';
+    });
+    html += '</div>';
+    hist.innerHTML = html;
+  }
+
+  function reportToday(){
+    Vitality.report({ key: 'rent', label: 'Rent', value: todayAmount(), date: todayKey(), kind: 'money', goalDirection: 'neutral' });
+  }
+
+  document.getElementById('addBtn').addEventListener('click', function(){
+    var input = document.getElementById('amtInput');
+    var n = parseFloat(input.value);
+    if (!n || n <= 0) { input.focus(); return }
+    var k = todayKey();
+    store.days[k] = (store.days[k] || 0) + n;
+    input.value = '';
+    render();
+    Vitality.save(store);
+    reportToday();
+  });
+  document.getElementById('amtInput').addEventListener('keydown', function(e){
+    if (e.key === 'Enter') document.getElementById('addBtn').click();
+  });
+
+  Promise.resolve(Vitality.load()).then(function(d){
+    if (d && typeof d === 'object' && d.days) store = d;
+    render();
+  });
+})();
+</script>
+</body>
+</html>

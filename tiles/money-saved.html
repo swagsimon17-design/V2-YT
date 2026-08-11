@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<title>Money Saved</title>
+<style>
+:root{
+  --bg:#050505; --card:rgba(9,13,12,0.72); --border:rgba(148,163,158,0.16);
+  --text:#E7ECEA; --muted:#94A39E; --faint:#5C6B66;
+  --mint:#6EE7B7; --amber:#FCD34D;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0;height:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:rgba(110,231,183,.28)}
+
+#vposter{display:none}
+html.posterMode body{background:transparent}
+html.posterMode main.page{display:none}
+html.posterMode #vposter{display:flex}
+#vposter{
+  position:fixed;inset:0;flex-direction:column;justify-content:space-between;
+  padding:16px 18px;overflow:hidden;
+}
+.pEyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:9.5px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.pRow{display:flex;align-items:baseline;gap:6px}
+.pNum{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:40px;
+  color:var(--text);line-height:1}
+.pUnit{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;
+  color:var(--faint);letter-spacing:.08em}
+
+main.page{display:none;min-height:100%;background:var(--bg)}
+html:not(.posterMode) main.page{display:block}
+.shell{
+  max-width:420px;margin:0 auto;padding:28px 20px calc(28px + env(safe-area-inset-bottom));
+  opacity:0;transform:translateY(8px);animation:riseIn .6s ease forwards;
+}
+@keyframes riseIn{to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){.shell{animation:none;opacity:1;transform:none}}
+
+.eyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+.heroRow{display:flex;align-items:baseline;gap:10px;margin-bottom:6px}
+.hero{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:52px;
+  color:var(--text);line-height:1}
+.heroUnit{font-size:14px;color:var(--faint)}
+.pill{
+  border:1px solid rgba(110,231,183,.35);border-radius:999px;padding:3px 10px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;
+  color:var(--mint);letter-spacing:.08em;white-space:nowrap;
+}
+.statusRow{margin-bottom:26px}
+
+.inputRow{display:flex;gap:10px}
+.numInput{
+  flex:1;min-width:0;border:1px solid var(--border);border-radius:14px;
+  background:var(--card);color:var(--text);font-size:16px;padding:14px;
+  font-family:-apple-system,Inter,sans-serif;min-height:40px;
+}
+.numInput:focus{outline:none;border-color:rgba(110,231,183,.5)}
+.btn{
+  border:none;border-radius:999px;padding:0 22px;
+  background:var(--mint);color:#04120c;font-family:-apple-system,Inter,sans-serif;
+  font-size:15px;font-weight:600;cursor:pointer;min-height:40px;white-space:nowrap;
+  transition:transform .15s ease, opacity .15s ease;
+}
+.btn:active{transform:scale(.97)}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}.btn:active{transform:none;opacity:.8}}
+
+.section{margin-top:32px}
+.sectionTitle{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin:0 0 12px}
+.bars{display:flex;align-items:flex-end;gap:8px;height:64px;padding:8px 4px;
+  background:var(--card);border:1px solid var(--border);border-radius:16px}
+.bar{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;
+  height:100%;gap:6px}
+.barFill{width:100%;border-radius:4px;background:rgba(110,231,183,.5);min-height:3px}
+.barFill.today{background:var(--mint)}
+.barLbl{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8.5px;color:var(--faint)}
+.empty{font-size:13px;color:var(--faint);text-align:center;padding:18px 0}
+</style>
+<script>if(!/page/.test(location.hash)&&window.self!==window.top)document.documentElement.className+=' posterMode'</script>
+</head>
+<body>
+
+<div id="vposter" aria-hidden="true">
+  <span class="pEyebrow">Money Saved</span>
+  <div class="pRow"><span class="pNum" id="pNum">0</span><span class="pUnit">CHF today</span></div>
+</div>
+
+<main class="page">
+  <div class="shell">
+    <p class="eyebrow">Money Saved</p>
+    <div class="heroRow">
+      <span class="hero" id="heroNum">0</span>
+      <span class="heroUnit">CHF today</span>
+    </div>
+    <div class="statusRow"><span class="pill" id="streakPill">no streak yet</span></div>
+
+    <div class="inputRow">
+      <input class="numInput" id="amtInput" type="number" inputmode="decimal" min="0" step="0.01" placeholder="amount" />
+      <button class="btn" id="addBtn" type="button">Log savings</button>
+    </div>
+
+    <div class="section">
+      <p class="sectionTitle">Last 7 days</p>
+      <div id="chart"></div>
+    </div>
+  </div>
+</main>
+
+<script>
+(function(){
+  'use strict';
+
+  var Vitality={_w:{},_sv:false,save:function(d){Vitality._sv=true;parent.postMessage({source:'vitality-tile',type:'save',data:d},'*')},load:function(){return new Promise(function(res){var id=Math.random().toString(36).slice(2);var ask=function(){parent.postMessage({source:'vitality-tile',type:'load',id:id},'*')};var n=0;var t=setInterval(function(){n++;if(n===1){ask();return}clearInterval(t);if(Vitality._w[id]){Vitality._w[id]=function(d){if(d!=null&&!Vitality._sv)location.reload()};res(null)}},3000);Vitality._w[id]=function(d){clearInterval(t);res(d)};ask()})},report:function(s){parent.postMessage({source:'vitality-tile',type:'report',stream:s},'*')}};
+  window.addEventListener('message', function (e) {
+    var m = e.data;
+    if (!m || m.source !== 'vitality-host') return;
+    if (m.type === 'load:result' && Vitality._w[m.id]) { Vitality._w[m.id](m.data); delete Vitality._w[m.id]; return }
+    if (m.type === 'save:error') { note('That save did not stick. Try again.') }
+    else if (m.type === 'report:error') { note('That log did not land yet.') }
+  });
+  if (window.self === window.top) {
+    window.Vitality = {
+      save: function(d){ try{ localStorage.setItem('v:money_saved', JSON.stringify(d)) }catch(e){} return Promise.resolve(true) },
+      load: function(){ try{ return Promise.resolve(JSON.parse(localStorage.getItem('v:money_saved')||'null')) }catch(e){ return Promise.resolve(null) } },
+      report: function(){}
+    };
+    Vitality = window.Vitality;
+  }
+
+  function note(t){
+    var n = document.getElementById('note');
+    if (!n) { n = document.createElement('div'); n.id = 'note'; n.style.cssText='margin-top:10px;font-size:12px;color:#FCD34D;text-align:center'; document.querySelector('.shell').appendChild(n) }
+    n.textContent = t;
+  }
+
+  function todayKey(){
+    var d = new Date();
+    return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  }
+  function dayKeyOffset(n){
+    var d = new Date();
+    d.setDate(d.getDate() - n);
+    return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+  }
+  function fmt(n){
+    return (Math.round(n * 100) / 100).toString();
+  }
+
+  var store = { days: {} };
+
+  function todayAmount(){ return store.days[todayKey()] || 0 }
+
+  function render(){
+    var t = todayAmount();
+    document.getElementById('pNum').textContent = fmt(t);
+    document.getElementById('heroNum').textContent = fmt(t);
+
+    var streak = 0, i = 0;
+    while (true) {
+      var k = dayKeyOffset(i);
+      if ((store.days[k] || 0) > 0) { streak++; i++ } else break;
+    }
+    document.getElementById('streakPill').textContent = streak > 0 ? (streak + ' day streak') : 'no streak yet';
+
+    var days = [];
+    for (var j = 6; j >= 0; j--) days.push(dayKeyOffset(j));
+    var max = 1;
+    days.forEach(function(k){ if ((store.days[k]||0) > max) max = store.days[k] });
+    var chart = document.getElementById('chart');
+    var anyData = days.some(function(k){ return (store.days[k]||0) > 0 });
+    if (!anyData) {
+      chart.innerHTML = '<div class="empty">no savings logged yet</div>';
+      return;
+    }
+    var html = '<div class="bars">';
+    days.forEach(function(k, idx){
+      var v = store.days[k] || 0;
+      var h = Math.max(3, Math.round((v / max) * 48));
+      var isToday = idx === 6;
+      var lbl = new Date(k + 'T00:00:00').toLocaleDateString(undefined, { weekday: 'narrow' });
+      html += '<div class="bar"><div class="barFill' + (isToday ? ' today' : '') + '" style="height:' + h + 'px"></div><span class="barLbl">' + lbl + '</span></div>';
+    });
+    html += '</div>';
+    chart.innerHTML = html;
+  }
+
+  function reportToday(){
+    Vitality.report({ key: 'money_saved', label: 'Money Saved', value: todayAmount(), date: todayKey(), kind: 'money', goalDirection: 'up' });
+  }
+
+  document.getElementById('addBtn').addEventListener('click', function(){
+    var input = document.getElementById('amtInput');
+    var n = parseFloat(input.value);
+    if (!n || n <= 0) { input.focus(); return }
+    var k = todayKey();
+    store.days[k] = (store.days[k] || 0) + n;
+    input.value = '';
+    render();
+    Vitality.save(store);
+    reportToday();
+  });
+  document.getElementById('amtInput').addEventListener('keydown', function(e){
+    if (e.key === 'Enter') document.getElementById('addBtn').click();
+  });
+
+  Promise.resolve(Vitality.load()).then(function(d){
+    if (d && typeof d === 'object' && d.days) store = d;
+    render();
+  });
+})();
+</script>
+</body>
+</html>
