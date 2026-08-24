@@ -13,3 +13,8 @@ Thumbs.db
 # Node
 node_modules/
 npm-debug.log*
+
+# Personal context. Yours, never committed.
+vault/USER.md
+vault/SOUL.md
+vault/IDENTITY.md
