@@ -16,7 +16,9 @@
   no key, no internet needed after the page loads.
 
   Saved phrases live in this device's storage for now (talk.phrases). The
-  starter phrases below always show; saved ones stack after them.
+  starter phrases are grouped (Quick, People, Out and about, School, Help);
+  kept ones show first under Mine. The name in the People group comes from
+  lib/site.js, the one place the name lives.
 -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -96,7 +98,16 @@
   }
   .quiet:active { color: var(--fg); }
 
-  #phrases { display: flex; flex-wrap: wrap; gap: 8px; overflow-y: auto; }
+  #phrases { display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
+  .group { display: flex; flex-wrap: wrap; gap: 8px; }
+  .glabel {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--fg-dim);
+    margin-top: 8px;
+  }
   .chip {
     background: var(--bg-elevated);
     color: var(--fg);
@@ -132,13 +143,34 @@
 
 <div id="phrases" aria-label="Saved phrases, tap to speak"></div>
 
-<p id="note">Tap a phrase to speak it. "Keep" saves what you typed as a new phrase. Hold a saved phrase to remove it.</p>
+<p id="note">Tap a phrase to speak it. "Keep" saves what you typed as a new phrase under Mine. Hold one of Mine to remove it.</p>
 
+<script src="lib/site.js"></script>
 <script>
-  var STARTERS = [
-    'Yes', 'No', 'Thank you', 'One moment please',
-    'I don’t speak. I use this app to talk.',
-    'Can you write it down for me?'
+  var NAME = (window.SITE && window.SITE.name) ? window.SITE.name : '';
+  var GROUPS = [
+    { label: 'Quick', items: [
+      'Yes', 'No', 'Please', 'Thank you', 'One moment please', 'I don’t know'
+    ]},
+    { label: 'People', items: [
+      'Hello', 'How are you?',
+      NAME ? 'My name is ' + NAME + '.' : 'Let me type my name for you.',
+      'I don’t speak. I use this app to talk.',
+      'Can you write it down for me?',
+      'Nice to meet you'
+    ]},
+    { label: 'Out and about', items: [
+      'Can I order, please?', 'Water please', 'That’s all, thank you',
+      'Debit, please', 'Can I get the bill?', 'Where is the bathroom?'
+    ]},
+    { label: 'School', items: [
+      'I have a question', 'Can you repeat that, slower?',
+      'Can I answer by text?', 'I need a bit more time'
+    ]},
+    { label: 'Help', items: [
+      'Can you help me?', 'I’m lost. Can you show me on a map?',
+      'I need a doctor.', 'This is an emergency. Please call 911 for me.'
+    ]}
   ];
   var KEY = 'talk.phrases';
   var box = document.getElementById('box');
@@ -168,33 +200,47 @@
     last = text;
   }
 
+  function chip(text, savedIndex) {
+    var b = document.createElement('button');
+    b.className = 'chip';
+    b.textContent = text;
+    b.addEventListener('click', function () { speak(text); });
+    if (savedIndex >= 0) {
+      // hold to remove, only for phrases the user added
+      var t;
+      var down = function () {
+        t = setTimeout(function () {
+          var list = phrases();
+          list.splice(savedIndex, 1);
+          setPhrases(list);
+          render();
+        }, 700);
+      };
+      var up = function () { clearTimeout(t); };
+      b.addEventListener('pointerdown', down);
+      b.addEventListener('pointerup', up);
+      b.addEventListener('pointerleave', up);
+    }
+    return b;
+  }
+
   function render() {
     var holder = document.getElementById('phrases');
     holder.innerHTML = '';
     var saved = phrases();
-    STARTERS.concat(saved).forEach(function (text, i) {
-      var isSaved = i >= STARTERS.length;
-      var b = document.createElement('button');
-      b.className = 'chip';
-      b.textContent = text;
-      b.addEventListener('click', function () { speak(text); });
-      if (isSaved) {
-        // hold to remove, only for phrases the user added
-        var t;
-        var down = function () {
-          t = setTimeout(function () {
-            var list = phrases();
-            list.splice(i - STARTERS.length, 1);
-            setPhrases(list);
-            render();
-          }, 700);
-        };
-        var up = function () { clearTimeout(t); };
-        b.addEventListener('pointerdown', down);
-        b.addEventListener('pointerup', up);
-        b.addEventListener('pointerleave', up);
-      }
-      holder.appendChild(b);
+    var all = GROUPS.slice();
+    if (saved.length) all = [{ label: 'Mine', items: saved, mine: true }].concat(all);
+    all.forEach(function (g) {
+      var label = document.createElement('div');
+      label.className = 'glabel';
+      label.textContent = g.label;
+      holder.appendChild(label);
+      var row = document.createElement('div');
+      row.className = 'group';
+      g.items.forEach(function (text, i) {
+        row.appendChild(chip(text, g.mine ? i : -1));
+      });
+      holder.appendChild(row);
     });
   }
 
@@ -204,8 +250,9 @@
   document.getElementById('save').addEventListener('click', function () {
     var text = box.value.trim();
     if (!text) return;
+    var starters = GROUPS.reduce(function (a, g) { return a.concat(g.items); }, []);
     var list = phrases();
-    if (list.indexOf(text) === -1 && STARTERS.indexOf(text) === -1) {
+    if (list.indexOf(text) === -1 && starters.indexOf(text) === -1) {
       list.push(text);
       setPhrases(list);
       render();
