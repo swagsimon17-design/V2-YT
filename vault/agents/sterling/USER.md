@@ -37,7 +37,11 @@ A guessed number is an invented fact, and an invented fact is a lie.
   - Amounts: [not yet known]
   - Payment schedules: [not yet known]
   - How much comes from each: [not yet known]
-- Accounts: [not yet known]
+- Accounts: one account. In his words: "accounts is just my td chequing."
+  Logged 2026-08-25. So: a TD chequing account, and that is all of it.
+  Names only, never numbers or logins.
+  - Cross-reference: nearly all tracked charges land on a Visa ending 0499,
+    already recorded in Trim's file. Its issuing bank: [not yet known]
 - Budget: in his words: "budget is 500 a month but i have to pay rent
   1000." Logged 2026-08-25. So: 500 a month to spend, and rent of 1,000 a
   month on top, fixed. Currency unconfirmed, presumably CAD.
