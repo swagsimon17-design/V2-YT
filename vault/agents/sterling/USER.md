@@ -44,13 +44,14 @@ A guessed number is an invented fact, and an invented fact is a lie.
     already recorded in Trim's file. Its issuing bank: [not yet known]
 - Budget: in his words: "budget is 500 a month but i have to pay rent
   1000." Logged 2026-08-25. So: 500 a month to spend, and rent of 1,000 a
-  month on top, fixed. Currency unconfirmed, presumably CAD.
+  month on top, fixed. Currency confirmed CAD, his words, logged 2026-08-25.
   - What the 500 is meant to cover: [not yet known]
 - Actual spend per leak: the subscriptions leak now has real numbers, held
   in Trim's file. On top of it sits a usage-based top-up bleed, Claude
   auto-recharge and Google Cloud reloads, that rivals the fixed plans
   (receipts, Aug 2026). Food delivery and impulse buys: [not yet known]
 - Currency he is billed in: mostly CAD, some USD (receipts, Aug 2026).
-  The currency he thinks in: [not yet known]
+  The currency he thinks in: CAD. In his words: "currency is cad."
+  Logged 2026-08-25.
 
 These stay empty until they are true.
