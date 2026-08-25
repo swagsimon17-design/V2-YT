@@ -71,6 +71,11 @@ Watch:
 Cancel, not used:
 
 - ZOEY OS Explorer: $50.85 USD per month, last landed CA$73.28.
+  Cancellation requested Aug 25, 2026. Simon authorized the send. The
+  Stripe Link billing portal (app.link.com) was unreachable from this
+  network, so the cancellation email went from his Gmail to
+  hello@zoeyos.com, their own reply-to address. Awaiting their
+  confirmation that no further charges will be made.
 - Coursera Plus: 68.0 CAD per month plus taxes.
 - Hostinger Premium web hosting: 16.79 CAD plus tax per month. Checked
   Aug 25, 2026 before drafting: the plan hosts nothing, no site built,

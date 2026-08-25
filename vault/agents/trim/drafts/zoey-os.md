@@ -1,6 +1,12 @@
 # Cancel: ZOEY OS Explorer
 
-Status: READY. Simon sends. Trim never sends.
+Status: CANCELLATION REQUESTED, Aug 25, 2026. Simon authorized this one
+send in his own words. The self-serve path (Stripe Link portal at
+app.link.com, linked from the receipt) was blocked by the network, so
+the message below went from his Gmail to hello@zoeyos.com, the reply-to
+address on Zoey OS's own welcome email. Gmail message id
+1a039dd904770cd2. Awaiting their confirmation that no further charges
+will be made. If a charge lands after this, that is a refund request.
 
 ## The charge
 
