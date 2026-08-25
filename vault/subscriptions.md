@@ -51,3 +51,8 @@ at CA$142.96, kept with open eyes as the working tool. Left to check: the
 YouTube membership amount, whether AG1 is active, and Retell AI.
 
 When one gets cancelled, its monthly price gets logged in Money Saved that day.
+
+Open watch: the US$77 Skool refund. A daily automated check of the inbox is
+armed (Routine "Watch for Skool $77 refund", checks around 11:00 Toronto
+time). The day it lands, Simon gets told and logs 77 in Money Saved. If Skool
+stays silent past 2026-09-08, the watch says so and closes itself.
