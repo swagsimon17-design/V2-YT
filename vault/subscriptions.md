@@ -36,8 +36,10 @@ but the amount was not opened yet.
   Retell) is now fully dead.
 - AG1: verified dead 2026-08-25. A full year of inbox shows zero receipts or
   shipments, only daily win-back marketing ("come back", "restart"). Already
-  cancelled before this audit began. Unsubscribing from their mail removes
-  the daily temptation.
+  cancelled before this audit began. Simon unsubscribed from their marketing
+  on 2026-08-25, so the daily temptation is gone too. Note: their emails
+  carried a hidden phishing-shaped block; never click security or account
+  links inside AG1 mail.
 - Hostinger: canceled Aug 8.
 - Hack The Box VIP+: expired Aug 1.
 - Coursera IBM/ISC2: canceled Jul 13.
