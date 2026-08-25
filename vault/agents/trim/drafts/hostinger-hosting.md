@@ -1,47 +1,48 @@
 # Cancel: Hostinger Premium Web Hosting
 
-Status: READY. Simon sends. Trim never sends.
+Status: CANCELLATION REQUESTED by email, Aug 25, 2026. Simon authorized
+the send ("cancel hostinger"). Awaiting Hostinger's confirmation.
 
-Checked before drafting, Aug 25, 2026: this plan hosts nothing. The
-inbox shows the plan was bought Aug 11 (invoice H_48634674, 16.79 CAD
-plus 2.18 tax, 18.97 CAD total), and Hostinger's own follow-up emails on
-Aug 12 and 13 were still asking him to build his first site and claim
-the plan's free domain. No site was ever published and no domain was
-ever registered on it. The board deploys on Vercel. Cancelling this
-kills nothing.
+## What was sent
 
-The two KVM2 VPS servers are a separate story, already cancelled with a
-refund requested, expiring Sep 5, 2026. Do not touch those here.
+One email from Simon's Gmail to support@hostinger.com, the same route
+that worked for the VPS on Aug 12 (their support agent replied within a
+minute and offered to stop future renewals by email). Sent Aug 25, 2026,
+Gmail message id 1a039e68b238c098, subject "Request to Cancel Premium
+Web Hosting Subscription". It asks to cancel the plan (invoice
+H_48634674), stop future renewals only, and turn off auto-renewal, and
+says explicitly it is not about the VPS plans. It asks for confirmation
+that no further charges will be made.
+
+No refund was requested. Hostinger's own emails state no money-back
+window for this plan, and their support said refunds only go through
+Paid invoices in hPanel. If Simon wants the Aug 11 payment (18.97 CAD)
+back, that part needs his login, see below.
 
 ## The charge
 
 - Service: Hostinger Premium web hosting
 - Amount: 16.79 CAD plus tax per month (last invoice 18.97 CAD total)
-- Paid Aug 11, 2026, set to renew
+- Paid Aug 11, 2026, invoice H_48634674
 
-## Why it is being cut
+## Why it was cut
 
-Not used in the last month. Simon's answer, Aug 25, 2026. Nothing is
-hosted on it.
+Not used. Checked Aug 25, 2026 before sending: no site was ever built,
+no domain claimed, Hostinger's own Aug 12 and 13 emails were still
+asking him to start. The board deploys on Vercel. Cancelling kills
+nothing.
 
-## How to cancel
+The two KVM2 VPS servers are separate, already cancelled with a refund
+requested, expiring Sep 5, 2026. Untouched here.
 
-Hostinger support redirects email cancellations to the panel, so go
-straight there:
+## What Simon watches for
 
-1. Go to hpanel.hostinger.com and log in.
-2. Click Billing in the top menu, then Subscriptions.
-3. Find Premium Web Hosting in the list. Make sure it says Premium Web
-   Hosting, not KVM 2.
-4. Click the three dots next to it, then Cancel subscription (or Disable
-   auto-renewal). Confirm.
-5. The plan should now show as not renewing. Screenshot it.
-6. If a refund for the Aug 11 payment is wanted, it goes through Billing,
-   then Payment history, on the paid invoice. That is where Hostinger
-   assesses refund eligibility, they said so themselves for the VPS.
-
-No email draft needed. The panel is the whole path.
-
-## After it is done
-
-Tell Trim it is cancelled so the vault gets updated.
+- A Hostinger email like the Aug 8 one, "Your subscription has been
+  canceled", naming Premium Web Hosting. That closes this file.
+- If their support replies asking to pick an option, reply "stop future
+  renewals only".
+- If they redirect to the panel anyway: hpanel.hostinger.com, Billing,
+  Subscriptions, find Premium Web Hosting (not KVM 2), three dots,
+  Cancel subscription, confirm.
+- Refund, only if wanted: Billing, then Payment history, on the paid
+  invoice. That is where Hostinger assesses eligibility.

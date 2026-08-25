@@ -1,51 +1,23 @@
 # Cancel: Skool Team Relentless
 
-Status: READY, with a check first. Simon sends. Trim never sends.
+Status: CLOSED. Already cancelled since Apr 21, 2026. Nothing was sent,
+nothing to send.
 
-## The charge
+## The evidence, from Simon's own inbox, checked Aug 25, 2026
 
-- Service: Skool group "Team Relentless"
-- Amount: $20.00, charged Apr 18, 2026. Status unknown. No charge has
-  been seen since, so it may already be dead.
+- Apr 18, 2026: receipt from noreply@skool.com, "Your Team Relentless
+  membership payment was successful. Your VISA ending in 0499 was
+  charged $20.00." (Gmail message id 19d9e6316df44fb7)
+- Apr 21, 2026: "Subscription canceled" from noreply@skool.com: "Your
+  subscription for Team Relentless has been canceled. You will not be
+  charged again." (Gmail message id 19db1d48f74f9e3b)
+- Apr 21, 2026: "Your membership has been canceled", removed from the
+  group. (Gmail message id 19db1d4cfdcc9f90)
+- No Team Relentless receipt or charge in the four months since.
 
-## Why it is being cut
+The April $20.00 was the only charge. It is dead.
 
-Not used in the last month. Simon's answer, Aug 25, 2026: cancel if
-still active. Other Skool groups on this account are already cancelled.
+## Nothing for Simon to do
 
-## How to cancel
-
-First find out if it is even alive, then kill it if it is:
-
-1. Go to skool.com and log in.
-2. Click your profile photo, top right, then Settings.
-3. Open Payments (or Billing). Every active group membership and its
-   next billing date is listed there.
-4. If Team Relentless is not listed, it is already dead. Nothing to do.
-   Tell Trim and this file gets closed out.
-5. If it is listed, click Cancel next to it and confirm. Access usually
-   lasts until the end of the paid period.
-6. Screenshot the confirmation.
-
-If the page will not let you cancel, message the group owner inside
-Skool or email help@skool.com:
-
----
-
-Hello,
-
-I would like to request the cancellation of my Team Relentless membership
-on Skool, associated with this email address, effective immediately.
-
-Please confirm once this has been processed and that no further charges
-will be made.
-
-Thanks,
-Simon
-
----
-
-## After it is done
-
-Tell Trim what you found, dead or cancelled, so the vault stops carrying
-this as unknown.
+No login, no email, no watch. If a Skool charge for Team Relentless ever
+lands again, that is a new subscription, not this one, and Trim flags it.
