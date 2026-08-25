@@ -17,7 +17,6 @@ but the amount was not opened yet.
   spend, he is learning cybersecurity with it. Not waste while it is being
   watched; re-check if a month goes unwatched. All other YouTube memberships
   in the inbox were one-month gifts, free, already expired.
-- AG1 (drinkag1): only marketing mail seen, US$87.99 mentioned. Active? Check.
 
 ## Already dead, no action needed
 
@@ -34,6 +33,10 @@ but the amount was not opened yet.
   it Gemini API from a course build. Simon's ruling: course tuition, and the
   course is over. Closed 2026-08-25: auto-reload off, Gemini API key deleted.
   Nothing can restart the meter.
+- AG1: verified dead 2026-08-25. A full year of inbox shows zero receipts or
+  shipments, only daily win-back marketing ("come back", "restart"). Already
+  cancelled before this audit began. Unsubscribing from their mail removes
+  the daily temptation.
 - Hostinger: canceled Aug 8.
 - Hack The Box VIP+: expired Aug 1.
 - Coursera IBM/ISC2: canceled Jul 13.
