@@ -17,7 +17,7 @@ export interface Goal {
 }
 
 /** Your main goal, polished into one sentence with the mentor. */
-export const OVERALL_GOAL = 'Spend less wasting money.'
+export const OVERALL_GOAL = 'Spend less time stressing about my health and disability.'
 
 /** Your goals. You can have more than one. */
 export const DEFAULT_GOALS: Goal[] = [
