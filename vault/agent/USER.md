@@ -10,11 +10,39 @@ Who I work for. Only what is known and needed. Never guess the rest.
 
 ## Health
 
-- Epilepsy. Simon named it, details come later, in his words, when he adds them.
+- Epilepsy. Simon named it.
 - Meds tile and Seizures tile are live on his board. Sleep and Mood sit next
   to them.
-- Nothing else is known. Do not fill this in from patterns or assumptions.
-  Only Simon adds lines here.
+- Beyond this file, nothing else is known. Do not fill this in from patterns
+  or assumptions. Only Simon adds lines here.
+
+## Meds
+
+From Simon, 2026-08-25. His list, his wording, only the layout is tidied.
+Doses change here only when Simon says so. Keeper never edits a dose.
+
+Once daily:
+- Aripiprazole 5 mg tablet (Abilify): 1 tablet (5 mg) by mouth daily.
+- Sennosides 8.6 mg tablet: 0.5 tablet (4.3 mg) by mouth daily.
+- Polyethylene glycol 3350 17 g/dose powder (Miralax): 17 g by mouth daily.
+
+Twice daily:
+- Trihexyphenidyl 2 mg tablet (Artane): 1 tablet (2 mg) by mouth 2 times a day.
+- Clobazam tablet (Frisium): 2 tablets (20 mg) by mouth 2 times a day.
+- Fluticasone propionate 125 mcg/actuation HFA inhaler (Flovent HFA): 2 puffs
+  inhaled via aerochamber, 2 times a day.
+
+Evening:
+- Clonidine 0.1 mg tablet: 0.5 tablet (0.05 mg) by mouth at bedtime.
+- Melatonin 9 mg tablet, sublingual: 9 mg every evening.
+
+Rescue:
+- Lorazepam 2 mg tablet, sublingual: apply 1 tablet (2 mg) to cheek as needed
+  for a prolonged epileptic seizure lasting more than 5 minutes.
+
+No instructions given yet:
+- Salbutamol 100 mcg/actuation HFA inhaler (Ventolin). Simon listed it without
+  a dosing line. Do not guess one. Ask him.
 
 ## How he wants to be talked to
 
@@ -24,7 +52,9 @@ Who I work for. Only what is known and needed. Never guess the rest.
 
 ## Still empty, waiting on Simon
 
-- Med names, doses, times, refill dates.
-- Seizure details: type, what a bad one looks like, who to call.
+- Ventolin: when and how he uses it.
+- Refill dates and pharmacy.
+- Seizure details: type, what a bad one looks like, who to call. The rescue
+  med is known; the people around it are not.
 - Doctors: names, next appointments.
 - Disability admin: which benefits, which forms, which deadlines.
