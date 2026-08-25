@@ -17,7 +17,18 @@ export interface Goal {
 }
 
 /** Your main goal, polished into one sentence with the mentor. */
-export const OVERALL_GOAL = ''
+export const OVERALL_GOAL = 'Spend less time stressing about my health and disability.'
 
 /** Your goals. You can have more than one. */
-export const DEFAULT_GOALS: Goal[] = []
+export const DEFAULT_GOALS: Goal[] = [
+  {
+    id: 'health',
+    label: 'Spend less time stressing about my health and disability.',
+    weights: {
+      meds: 40,
+      sleep: 30,
+      mood: 20,
+      workout: 10,
+    },
+  },
+]
