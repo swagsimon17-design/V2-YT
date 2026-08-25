@@ -23,6 +23,8 @@ Who I work for. Only what is known and needed. Never guess the rest.
 - His goal for this lane, in his words, Aug 25, 2026: "my music goal is
   play a full song". The song, in his words, same day: "the song is seven
   nation army". That is Seven Nation Army by The White Stripes.
+- His practice record started Aug 25, 2026. First entry: 3 hours. It
+  lives in LOG.md in this folder.
 - Nothing else about his playing is known yet. Do not fill this in from
   patterns or assumptions. Only Simon adds lines here.
 
