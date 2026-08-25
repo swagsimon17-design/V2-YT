@@ -40,8 +40,9 @@ $77.00, Skool Agentic AI for Founders $97.00, Skool Hacker Academy $9.00,
 StudyFetch CA$25.00 per month, DrumBeatsOnline, Hack The Box VIP+, CapCut,
 FL Cloud, Coursera IBM/ISC2 track, Retell AI paused at zero credit.
 
-Unclear, needs Simon: Whop FatihMakes Academy $9.99 (Aug 14, cadence
-unstated). Skool Team Relentless $20.00 (Apr 18, status unknown).
+Unclear: Whop FatihMakes Academy $9.99 (Aug 14, cadence unstated). On
+watch since Aug 25, 2026 to confirm whether it recurs. Skool Team
+Relentless $20.00 (Apr 18) moved to the cancel list, see below.
 
 No amount gets written down until it comes from the ledger or a bill Simon
 shows. A guessed price is an invented fact, and an invented fact is a lie.
@@ -53,12 +54,51 @@ shows. A guessed price is an invented fact, and an invented fact is a lie.
 - One ask, then drop it. No nagging.
 - A forgotten subscription is a leak, never a failure.
 
+## Used in the last month
+
+Simon answered the blunt question on Aug 25, 2026.
+
+Keep, used:
+
+- Claude Max: CA$140.00 per month.
+- GitHub Copilot Pro: $10.00 USD per month.
+
+Watch:
+
+- Whop FatihMakes Academy: $9.99, used, but cadence still unclear. On
+  watch to confirm whether it recurs. Ask again if a second charge lands.
+
+Cancel, not used:
+
+- ZOEY OS Explorer: $50.85 USD per month, last landed CA$73.28.
+- Coursera Plus: 68.0 CAD per month plus taxes.
+- Hostinger Premium web hosting: 16.79 CAD plus tax per month. Checked
+  Aug 25, 2026 before drafting: the plan hosts nothing, no site built,
+  no domain claimed, the board lives on Vercel. Safe to cancel.
+- Skool Team Relentless: $20.00 in April, status unknown, cancel if
+  still active.
+
+## The leak being cut
+
+The three known recurring cuts: CA$73.28 (ZOEY, as landed) + 68.0 CAD
+(Coursera, before tax) + 16.79 CAD (Hostinger, before tax) is roughly
+CA$158 a month before some taxes. Mixed billing, so roughly is the
+honest word. Skool Team Relentless would add $20.00 more if it turns out
+to still be alive.
+
+## The drafts
+
+Cancellation drafts live in `vault/agents/trim/drafts/`, one file per
+cut: zoey-os.md, coursera-plus.md, hostinger-hosting.md,
+skool-team-relentless.md. Each has the exact steps or the message to
+send. Trim drafts, Simon sends. Trim sends nothing, ever.
+
 ## Open slots, waiting on Simon
 
-- Which ones were used in the last month: [not yet known]. The one blunt
-  question per charge is still waiting on Simon.
-- Total monthly cost of the leak: one clean number cannot be computed yet.
-  Mixed CAD and USD, plus usage-based charges. Honest answer: not yet.
-- The two unclear charges above: [needs Simon]
+- Confirmation that each cancellation went through, so the vault can
+  mark them dead.
+- The Whop cadence, once a second charge does or does not land.
+- The usage-based bleed (Claude top-ups, Google Cloud reloads) is real
+  but is not a subscription to cancel. It stays in Sterling's lane.
 
-These stay empty until they are true.
+These stay open until they are true.
