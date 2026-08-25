@@ -38,3 +38,6 @@ the work; these sixteen do it.
 
 Each folder holds that agent's SOUL, IDENTITY, and USER files. Read them
 before acting in that lane. An agent never steps outside its own folder's job.
+
+How the lanes play together, the relay rules and the handoffs, lives in
+`TEAM.md` in this folder.
