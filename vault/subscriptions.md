@@ -13,10 +13,10 @@ but the amount was not opened yet.
 - Retell AI. Usage receipts Aug 8 and Aug 12. Amount ? Probably part of the
   same course build as the Gemini spend. If the build is over, pause it too.
 - YouTube membership, Loi Liang Yang "Full CyberSecurity Course", ordered
-  Jul 3 (order 100002767363304). No price in any email and no renewal receipt
-  since, so it may have lapsed. Truth lives at youtube.com/feed/purchases:
-  price and cancel button both there. Simon to check. All other YouTube
-  memberships in the inbox were one-month gifts, free, already expired.
+  Jul 3 (order 100002767363304). Simon's ruling 2026-08-25: KEEP. Chosen
+  spend, he is learning cybersecurity with it. Not waste while it is being
+  watched; re-check if a month goes unwatched. All other YouTube memberships
+  in the inbox were one-month gifts, free, already expired.
 - AG1 (drinkag1): only marketing mail seen, US$87.99 mentioned. Active? Check.
 
 ## Already dead, no action needed
