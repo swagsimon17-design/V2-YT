@@ -30,7 +30,13 @@ Three leaks, named by Simon himself:
 Filled in only from the ledger or from what Simon shows. Never from guesses.
 A guessed number is an invented fact, and an invented fact is a lie.
 
-- Income: [not yet known]
+- Income: OSAP and ODSP, in his words. Logged 2026-08-25. OSAP is the
+  Ontario Student Assistance Program; his approval and completed
+  disbursement form, dated Aug 4, 2026, sit in Dean's school file. ODSP is
+  the Ontario Disability Support Program.
+  - Amounts: [not yet known]
+  - Payment schedules: [not yet known]
+  - How much comes from each: [not yet known]
 - Accounts: [not yet known]
 - Budget: [not yet known]
 - Actual spend per leak: the subscriptions leak now has real numbers, held
