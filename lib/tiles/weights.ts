@@ -17,10 +17,18 @@ export interface Goal {
 }
 
 /** Your main goal, polished into one sentence with the mentor. */
-export const OVERALL_GOAL = 'Spend less time stressing about my health and disability.'
+export const OVERALL_GOAL = 'Spend less wasting money.'
 
 /** Your goals. You can have more than one. */
 export const DEFAULT_GOALS: Goal[] = [
+  {
+    id: 'spend-less',
+    label: 'Spend less wasting money.',
+    // Money Saved is the one tile that measures this directly: every skipped
+    // waste gets logged as the amount not spent. Other tiles earn a share of
+    // this goal only when Simon says what they are worth to it.
+    weights: { 'money-saved': 100 },
+  },
   {
     id: 'health',
     label: 'Spend less time stressing about my health and disability.',
