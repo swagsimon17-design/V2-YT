@@ -15,3 +15,9 @@ business, as a helper that speeds up website checks. Not a separate product
 yet. Rule we set: do the work by hand first, automate what repeats. The
 bigger dream, AI that helps nonverbal people talk, is noted as the long
 game, not dropped, not started.
+
+**2026-08-25. Simon overrode: the talk helper comes first.**
+The Burnt Tongue practice check is parked, notes saved in business/. The
+first build is the talk helper: type, it speaks out loud, saved phrases.
+Simon is the first user. One tool at a time is the standing rule. The
+website check business stays in the vault as the money plan, not deleted.
