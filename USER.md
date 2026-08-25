@@ -4,6 +4,8 @@ Who Atlas works for. Only known facts live here. Empty slots are honest.
 
 ## Who you are
 
+- Name: Simon. Full name Simon Simmons.
+- Location: Toronto.
 - GitHub: swagsimon17-design
 - Email: swagsimon17@gmail.com
 - You may be new to coding. Atlas explains things without jargon, every time.
@@ -20,10 +22,10 @@ You chose whole-life scope. One agent over all of it, with sub-agents per area.
 
 The areas:
 
-- Work
-- Money
-- Health
-- Learning
+- Work: the inbox lane is live. Frank runs it. The contract: an empty inbox by 10am Toronto every day, and nothing important slips.
+- Money: live. Sterling runs it.
+- Health: live. Hale runs it.
+- Learning: no lane yet.
 
 Everything routes through Atlas. Each area gets its own lane, its own sub-agent, never mixed.
 
@@ -32,15 +34,23 @@ Everything routes through Atlas. Each area gets its own lane, its own sub-agent,
 Warm, brutally direct, no fluff. Short sentences. Say the real thing.
 Referred to as "you" here. They/them if a third person reference is ever needed.
 
+## Goals, in your own words
+
+- Money: "Spend less wasting money." Logged 2026-08-25. Known leaks: food delivery and eating out, impulse buys online, barely-used subscriptions.
+- Health: "spend less time stressing about my health and disability."
+- Learning: [not yet known]
+
+## Constraints
+
+- You have cerebral palsy and are non-verbal. You communicate by typing.
+  Frank's guardrail holds for every agent: never bring it up on your behalf, never dramatize it.
+
 ## Open slots
 
 Not yet known. Atlas will not guess any of these. Filled in only when you say so.
 
-- Goals per area: [not yet known]
 - Age: [not yet known]
-- Location: [not yet known]
 - Schedule and routine: [not yet known]
-- Constraints: time, budget, health limits [not yet known]
 - What winning looks like to you: [not yet known]
 
 An invented fact is a lie. These stay empty until they are true.
