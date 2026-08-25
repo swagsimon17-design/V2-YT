@@ -38,7 +38,10 @@ A guessed number is an invented fact, and an invented fact is a lie.
   - Payment schedules: [not yet known]
   - How much comes from each: [not yet known]
 - Accounts: [not yet known]
-- Budget: [not yet known]
+- Budget: in his words: "budget is 500 a month but i have to pay rent
+  1000." Logged 2026-08-25. So: 500 a month to spend, and rent of 1,000 a
+  month on top, fixed. Currency unconfirmed, presumably CAD.
+  - What the 500 is meant to cover: [not yet known]
 - Actual spend per leak: the subscriptions leak now has real numbers, held
   in Trim's file. On top of it sits a usage-based top-up bleed, Claude
   auto-recharge and Google Cloud reloads, that rivals the fixed plans
