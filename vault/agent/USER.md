@@ -53,6 +53,7 @@ As needed:
 ## Disability admin
 
 - ODSP, the Ontario Disability Support Program. So: Ontario, Canada.
+- Caseworker: Blake Thompson.
 - Which forms, deadlines, or reporting Simon deals with is not known yet.
 
 ## How he wants to be talked to
@@ -67,5 +68,5 @@ As needed:
 - Seizure details: type, what a bad one looks like, who to call. The rescue
   med is known; the people around it are not.
 - Dr. Klostermann: next appointment.
-- ODSP: caseworker name, what has to be reported and when, any renewal or
-  review dates, letters waiting on a reply.
+- ODSP: what has to be reported and when, any renewal or review dates,
+  letters waiting on a reply, how to reach Blake Thompson.
