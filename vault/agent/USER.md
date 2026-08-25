@@ -44,6 +44,11 @@ As needed:
 - Salbutamol 100 mcg/actuation HFA inhaler (Ventolin): 2 puffs, when he
   gets sick. His words.
 
+## Doctors
+
+- Dr. Klostermann. Simon named them; what they treat him for and the next
+  appointment are not known yet. Do not guess either.
+
 ## How he wants to be talked to
 
 - Blunt and brief. Short sentences, straight answers.
@@ -55,5 +60,6 @@ As needed:
 - Refill dates and pharmacy.
 - Seizure details: type, what a bad one looks like, who to call. The rescue
   med is known; the people around it are not.
-- Doctors: names, next appointments.
+- Dr. Klostermann: what they treat Simon for, next appointment.
+- Any other doctors.
 - Disability admin: which benefits, which forms, which deadlines.
