@@ -10,11 +10,6 @@ but the amount was not opened yet.
 - Anthropic auto recharge, extra usage. About 14 separate charges in August.
   The one opened was CA$11.40. Order of CA$150 for the month. Turned OFF by
   Simon on 2026-08-25. Both auto-reloads (this and Google Cloud) now dead.
-- Retell AI. Usage receipts Aug 8 and Aug 12, part of the same course build
-  as the Gemini spend. Simon closing it 2026-08-25, three steps in their
-  dashboard: release any phone number (those bill monthly on their own),
-  turn off auto-recharge, delete the agents and API keys. Once done, move
-  this to the dead list.
 - YouTube membership, Loi Liang Yang "Full CyberSecurity Course", ordered
   Jul 3 (order 100002767363304). Simon's ruling 2026-08-25: KEEP. Chosen
   spend, he is learning cybersecurity with it. Not waste while it is being
@@ -36,6 +31,9 @@ but the amount was not opened yet.
   it Gemini API from a course build. Simon's ruling: course tuition, and the
   course is over. Closed 2026-08-25: auto-reload off, Gemini API key deleted.
   Nothing can restart the meter.
+- Retell AI: closed by Simon 2026-08-25. Phone number released, auto-recharge
+  off, agents and keys deleted. The whole course build stack (Skool, Gemini,
+  Retell) is now fully dead.
 - AG1: verified dead 2026-08-25. A full year of inbox shows zero receipts or
   shipments, only daily win-back marketing ("come back", "restart"). Already
   cancelled before this audit began. Unsubscribing from their mail removes
