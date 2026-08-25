@@ -22,8 +22,6 @@ Active fixed plans:
 - GitHub Copilot Pro: $10.00 USD per month, paid Aug 21, 2026.
 - ZOEY OS Explorer: $50.85 USD per month billed in CAD, last landed as
   CA$73.28. Started Aug 16, 2026 after a trial.
-- Coursera Plus: 68.0 CAD per month plus taxes (34.0 CAD first month,
-  Jul 21). Reactivated Jul 14, 2026, no cancellation since.
 - Hostinger Premium web hosting: 16.79 CAD plus tax per month, paid
   Aug 11, 2026. Appears still set to renew.
 
@@ -38,7 +36,8 @@ Already cancelled or expired, not counted forward: Hostinger KVM2 VPS x2
 (expire Sep 5, 2026, cancellation and refund requested), Skool AI Workshop
 $77.00, Skool Agentic AI for Founders $97.00, Skool Hacker Academy $9.00,
 StudyFetch CA$25.00 per month, DrumBeatsOnline, Hack The Box VIP+, CapCut,
-FL Cloud, Coursera IBM/ISC2 track, Retell AI paused at zero credit.
+FL Cloud, Coursera IBM/ISC2 track, Retell AI paused at zero credit,
+Coursera Plus (cancelled Aug 22, 2026, see below).
 
 Unclear: Whop FatihMakes Academy $9.99 (Aug 14, cadence unstated). On
 watch since Aug 25, 2026 to confirm whether it recurs. Skool Team
@@ -76,7 +75,12 @@ Cancel, not used:
   network, so the cancellation email went from his Gmail to
   hello@zoeyos.com, their own reply-to address. Awaiting their
   confirmation that no further charges will be made.
-- Coursera Plus: 68.0 CAD per month plus taxes.
+- Coursera Plus: 68.0 CAD per month plus taxes. DONE. Already cancelled
+  before this cut ran: Coursera's own confirmation email landed Aug 22,
+  2026 (no-reply@t.learn.coursera.org, "Coursera Plus Cancellation
+  Confirmation"). Access runs until September 21, 2026 (UTC), and the
+  email states no further payments will be charged. Verified in his
+  inbox Aug 25, 2026. Nothing sent, nothing left to do.
 - Hostinger Premium web hosting: 16.79 CAD plus tax per month. Checked
   Aug 25, 2026 before drafting: the plan hosts nothing, no site built,
   no domain claimed, the board lives on Vercel. Safe to cancel.
@@ -89,7 +93,8 @@ The three known recurring cuts: CA$73.28 (ZOEY, as landed) + 68.0 CAD
 (Coursera, before tax) + 16.79 CAD (Hostinger, before tax) is roughly
 CA$158 a month before some taxes. Mixed billing, so roughly is the
 honest word. Skool Team Relentless would add $20.00 more if it turns out
-to still be alive.
+to still be alive. Coursera's 68.0 CAD is already secured: cancelled
+Aug 22, 2026, confirmed by Coursera, no further charges.
 
 ## The drafts
 
