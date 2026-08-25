@@ -50,6 +50,11 @@ As needed:
   epilepsy included. No separate neurologist at the moment.
   Next appointment not known yet.
 
+## Disability admin
+
+- ODSP, the Ontario Disability Support Program. So: Ontario, Canada.
+- Which forms, deadlines, or reporting Simon deals with is not known yet.
+
 ## How he wants to be talked to
 
 - Blunt and brief. Short sentences, straight answers.
@@ -62,4 +67,5 @@ As needed:
 - Seizure details: type, what a bad one looks like, who to call. The rescue
   med is known; the people around it are not.
 - Dr. Klostermann: next appointment.
-- Disability admin: which benefits, which forms, which deadlines.
+- ODSP: caseworker name, what has to be reported and when, any renewal or
+  review dates, letters waiting on a reply.
