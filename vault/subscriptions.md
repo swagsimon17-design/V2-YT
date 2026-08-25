@@ -10,8 +10,11 @@ but the amount was not opened yet.
 - Anthropic auto recharge, extra usage. About 14 separate charges in August.
   The one opened was CA$11.40. Order of CA$150 for the month. Turned OFF by
   Simon on 2026-08-25. Both auto-reloads (this and Google Cloud) now dead.
-- Retell AI. Usage receipts Aug 8 and Aug 12. Amount ? Probably part of the
-  same course build as the Gemini spend. If the build is over, pause it too.
+- Retell AI. Usage receipts Aug 8 and Aug 12, part of the same course build
+  as the Gemini spend. Simon closing it 2026-08-25, three steps in their
+  dashboard: release any phone number (those bill monthly on their own),
+  turn off auto-recharge, delete the agents and API keys. Once done, move
+  this to the dead list.
 - YouTube membership, Loi Liang Yang "Full CyberSecurity Course", ordered
   Jul 3 (order 100002767363304). Simon's ruling 2026-08-25: KEEP. Chosen
   spend, he is learning cybersecurity with it. Not waste while it is being
