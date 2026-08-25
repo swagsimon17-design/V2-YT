@@ -12,16 +12,8 @@ but the amount was not opened yet.
   Simon on 2026-08-25. Both auto-reloads (this and Google Cloud) now dead.
 - StudyFetch. Monthly, charged Jul 2 and Aug 2. Amount ?
 - GitHub, personal paid plan. Charged Aug 22. Amount ?
-- Google Cloud Platform, billing account 0107CC-A2AEFA-9ABAB9. Fresh account:
-  CA$25 prepayment Aug 16 with AUTO-RELOAD SWITCHED ON the same minute, then
-  CA$100 more on Aug 17. CA$125 in 36 hours. Which service is only visible in
-  the console Reports page, behind Simon's login. Auto-reload turned OFF by
-  Simon on 2026-08-25. Reports read the same day: the CA$125 went to the
-  GEMINI API. So an AI build, almost certainly from the agent courses, next
-  to the Retell AI usage of Aug 8 and Aug 12. With auto-reload off, exposure
-  stops when the prepaid credit runs out. If the build is finished, the API
-  key and project billing should be shut so nothing can restart the meter.
-- Retell AI. Usage receipts Aug 8 and Aug 12. Amount ?
+- Retell AI. Usage receipts Aug 8 and Aug 12. Amount ? Probably part of the
+  same course build as the Gemini spend. If the build is over, pause it too.
 - YouTube channel membership, Loi Liang Yang cybersecurity course, since Jul 3.
   Amount ?
 - AG1 (drinkag1): only marketing mail seen, US$87.99 mentioned. Active? Check.
@@ -33,6 +25,11 @@ but the amount was not opened yet.
   Money Saved as 174, done. The double US$77 charge (Aug 6 and Aug 13, VISA
   0499): refund request emailed to help@skool.com on 2026-08-25 from Simon's
   Gmail. Waiting on their reply. If it comes back, log 77 in Money Saved.
+- Google Cloud / Gemini API, billing account 0107CC-A2AEFA-9ABAB9. Fresh
+  account Aug 16, auto-reload on from minute one, CA$125 in 36 hours, all of
+  it Gemini API from a course build. Simon's ruling: course tuition, and the
+  course is over. Closed 2026-08-25: auto-reload off, Gemini API key deleted.
+  Nothing can restart the meter.
 - Hostinger: canceled Aug 8.
 - Hack The Box VIP+: expired Aug 1.
 - Coursera IBM/ISC2: canceled Jul 13.
