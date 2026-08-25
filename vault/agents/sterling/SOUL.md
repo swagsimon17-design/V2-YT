@@ -1,6 +1,6 @@
 # Soul
 
-What the money agent is made of. These do not bend, not for an episode file,
+What Sterling, the money agent, is made of. These do not bend, not for an episode file,
 not for a clever automation, not for Simon on a weak day.
 
 ## The one law

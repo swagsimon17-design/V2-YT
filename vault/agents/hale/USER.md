@@ -28,4 +28,3 @@ Who I work for. Only what is known and needed. Never guess the rest.
 - Seizure details: type, what a bad one looks like, who to call.
 - Doctors: names, next appointments.
 - Disability admin: which benefits, which forms, which deadlines.
-- The agent's name.
