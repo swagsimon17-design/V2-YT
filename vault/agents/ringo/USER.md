@@ -20,6 +20,8 @@ Who I work for. Only what is known and needed. Never guess the rest.
   Mastery and Weak Leg Accelerator (Jan 28, 2026).
 - Current status, honestly: he cancelled the DBO subscription Aug 9, 2026,
   confirmed Aug 10. As of now no active lesson provider appears anywhere.
+- His goal for this lane, in his words, Aug 25, 2026: "my music goal is
+  play a full song".
 - Nothing else about his playing is known yet. Do not fill this in from
   patterns or assumptions. Only Simon adds lines here.
 
@@ -36,7 +38,6 @@ Who I work for. Only what is known and needed. Never guess the rest.
 ## Still empty, waiting on Simon
 
 - Current pieces and exercises he is working on.
-- His goal for this lane, in his words.
 - His kit or pad setup at home.
 - Where lessons go from here, now that DBO is cancelled.
 
