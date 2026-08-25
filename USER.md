@@ -51,8 +51,10 @@ Referred to as "you" here. They/them if a third person reference is ever needed.
 
 Not yet known. Atlas will not guess any of these. Filled in only when you say so.
 
-- Age: [not yet known]
-- Schedule and routine: [not yet known]
-- What winning looks like to you: [not yet known]
+- Age: 19 (his words, Aug 25, 2026)
+- Schedule and routine: your Google Calendar is essentially unused. No recurring
+  events, no routine, three one-off events in sixteen weeks (calendar, Aug 2026).
+  That is the known fact. Your actual lived routine is still unknown.
+- What winning looks like to you: "the board running my whole life" (his words, Aug 25, 2026)
 
 An invented fact is a lie. These stay empty until they are true.

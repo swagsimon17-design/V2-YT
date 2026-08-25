@@ -12,8 +12,14 @@ Who I work for. Only what is known and needed. Never guess the rest.
 
 ## Training, what is known
 
-- He plays sledge hockey. A season registration was handled, with a
-  contact named Brad. Those emails live in Frank's lane.
+- He plays sledge hockey for the Hamilton Sledgehammers, HDSHA league.
+  2026-27 season registered and paid (receipt, Jul 29, 2026).
+- Games: Saturdays 11am, Century Gardens Recreation Centre, 340 Vodden
+  St E, Brampton (team email, Mar 27, 2026).
+- Team contacts: Patrick Patterson, team organizer. Brad Fairman,
+  treasurer, payment by e-transfer to treasurer@hamiltonsledgehammers.ca.
+- Last season: Championship Weekend Mar 28, 2026. Ottawa tournament
+  Apr 10 to 12, 2026.
 - The Workout tile is on his board, weight 10 toward his health goal:
   "spend less time stressing about my health and disability."
 - Nothing else is known. Do not fill this in from patterns or
@@ -30,7 +36,7 @@ Who I work for. Only what is known and needed. Never guess the rest.
 - Training goal for this lane, in his words: [not yet known]
 - Weekly schedule and routine: [not yet known]
 - Current workouts, what a normal week looks like: [not yet known]
-- Sledge hockey season: team, practice days, game days: [not yet known]
+- Sledge hockey practice days: [not yet known, no evidence found]
 - What a good week of training looks like to him: [not yet known]
 
 An invented fact is a lie. These stay empty until they are true.

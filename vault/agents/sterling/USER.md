@@ -33,7 +33,11 @@ A guessed number is an invented fact, and an invented fact is a lie.
 - Income: [not yet known]
 - Accounts: [not yet known]
 - Budget: [not yet known]
-- Actual spend per leak: [not yet known]
-- Currency he thinks in: [not yet known]
+- Actual spend per leak: the subscriptions leak now has real numbers, held
+  in Trim's file. On top of it sits a usage-based top-up bleed, Claude
+  auto-recharge and Google Cloud reloads, that rivals the fixed plans
+  (receipts, Aug 2026). Food delivery and impulse buys: [not yet known]
+- Currency he is billed in: mostly CAD, some USD (receipts, Aug 2026).
+  The currency he thinks in: [not yet known]
 
 These stay empty until they are true.

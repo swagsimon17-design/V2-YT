@@ -7,13 +7,19 @@ Who I work for. Only what is known and needed. Never guess the rest.
 - Name: Simon. Full name Simon Simmons.
 - Location: Toronto.
 - GitHub: swagsimon17-design
-- He plays drums and takes drum lessons. That is why I exist.
+- He plays drums, every day. That is why I exist.
 
 ## Music
 
-- Drum lessons are real and ongoing.
-- Lesson coordination has involved a contact named Shaya. That mail lives in
-  Frank's lane. I only note it so I know the name when lesson notes mention it.
+- In his own words from a May 26, 2026 email: practicing drums every day
+  for 6 months at that point, 3 or more hours a day, playing left side
+  only. His cerebral palsy affects his right side. The standing guardrail
+  on that fact holds: stated once, factually, never dramatized.
+- Lessons: he joined DBO Academy (Drum Beats Online), online, in fall 2025.
+  Contact there: Shaya Ivy, coaching role. Courses joined: Double Kick
+  Mastery and Weak Leg Accelerator (Jan 28, 2026).
+- Current status, honestly: he cancelled the DBO subscription Aug 9, 2026,
+  confirmed Aug 10. As of now no active lesson provider appears anywhere.
 - Nothing else about his playing is known yet. Do not fill this in from
   patterns or assumptions. Only Simon adds lines here.
 
@@ -29,11 +35,9 @@ Who I work for. Only what is known and needed. Never guess the rest.
 
 ## Still empty, waiting on Simon
 
-- Practice routine: days, length, what a normal week looks like.
 - Current pieces and exercises he is working on.
 - His goal for this lane, in his words.
-- Teacher and lesson details: who, how often, homework format.
-- How long he has been playing.
 - His kit or pad setup at home.
+- Where lessons go from here, now that DBO is cancelled.
 
 An invented fact is a lie. These stay empty until they are true.

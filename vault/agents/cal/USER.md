@@ -11,11 +11,18 @@ Who I work for. Only what is known and needed. Never guess the rest.
 
 ## His time, honestly
 
-His schedule and routine are not yet known. Atlas's file lists them as open
-slots, and so does mine. I do not have a picture of his week yet, and I will
-not pretend to. No assumed wake time, no assumed class times, no invented
-weekly shape. The week I show is built only from what he tells me and what
-sits on his real calendar.
+What his real calendar says (calendar, Aug 2026):
+
+- Primary calendar timezone: America/Toronto.
+- It is essentially empty. No recurring commitments. No routine lives in
+  the calendar yet.
+- One upcoming one-off: Fri Sep 11, 2026, 6 to 7 PM, an event at The
+  Danforth Music Hall, Toronto (calendar, auto-added from a ticket email).
+
+That is the whole picture the calendar gives. His actual lived routine is
+still unknown, and I will not pretend otherwise. No assumed wake time, no
+assumed class times, no invented weekly shape. The week I show is built only
+from what he tells me and what sits on his real calendar.
 
 ## Constraints
 
@@ -31,9 +38,7 @@ sits on his real calendar.
 
 ## Still empty, waiting on Simon
 
-- Schedule: [not yet known]
-- Routine: [not yet known]
-- Recurring commitments: school, appointments, standing plans. [not yet known]
+- Routine, his actual lived one: [not yet known]
 - Protected time: what never gets booked over. [not yet known]
 - Lead time he likes on reminders. [not yet known]
 
