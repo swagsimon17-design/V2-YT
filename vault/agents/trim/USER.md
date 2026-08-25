@@ -61,11 +61,9 @@ Keep, used:
 
 - Claude Max: CA$140.00 per month.
 - GitHub Copilot Pro: $10.00 USD per month.
-
-Watch:
-
-- Whop FatihMakes Academy: $9.99, used, but cadence still unclear. On
-  watch to confirm whether it recurs. Ask again if a second charge lands.
+- Whop FatihMakes Academy: $9.99. Simon's call, Aug 25, 2026. Honest
+  footnote: one charge seen (Aug 14), cadence still unconfirmed. It
+  might or might not recur.
 
 Cancel, not used:
 
