@@ -46,8 +46,7 @@ As needed:
 
 ## Doctors
 
-- Dr. Klostermann. Simon named them; what they treat him for and the next
-  appointment are not known yet. Do not guess either.
+- Dr. Klostermann, family doctor. Next appointment not known yet.
 
 ## How he wants to be talked to
 
@@ -60,6 +59,6 @@ As needed:
 - Refill dates and pharmacy.
 - Seizure details: type, what a bad one looks like, who to call. The rescue
   med is known; the people around it are not.
-- Dr. Klostermann: what they treat Simon for, next appointment.
-- Any other doctors.
+- Dr. Klostermann: next appointment.
+- The epilepsy doctor, if there is one besides the family doctor.
 - Disability admin: which benefits, which forms, which deadlines.
