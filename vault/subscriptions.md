@@ -10,8 +10,12 @@ but the amount was not opened yet.
 - Anthropic auto recharge, extra usage. About 14 separate charges in August.
   The one opened was CA$11.40. Order of CA$150 for the month. Turned OFF by
   Simon on 2026-08-25. Both auto-reloads (this and Google Cloud) now dead.
-- StudyFetch. Monthly, charged Jul 2 and Aug 2. Amount ?
-- GitHub, personal paid plan. Charged Aug 22. Amount ?
+- StudyFetch Mobile. CA$25.00 a month, billed the 2nd, paid via Link. Read
+  from the Aug 2 receipt. Cancel at studyfetch.com billing settings, or
+  support@studyfetch.com.
+- GitHub Copilot Pro. US$10.00 a month, billed the 21st, Visa 0499. Not a
+  repo plan; the board costs nothing. Redundant next to Claude Code unless
+  Simon actually uses Copilot. Cancel under github.com Settings, Copilot.
 - Retell AI. Usage receipts Aug 8 and Aug 12. Amount ? Probably part of the
   same course build as the Gemini spend. If the build is over, pause it too.
 - YouTube channel membership, Loi Liang Yang cybersecurity course, since Jul 3.
