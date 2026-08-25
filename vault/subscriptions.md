@@ -21,8 +21,9 @@ but the amount was not opened yet.
 
 - Skool "AI Workshop" (US$77/mo) and "Agentic AI for Founders" (US$97/mo):
   Simon cancelled both on 2026-08-25. US$174 a month back, to be tapped into
-  Money Saved as 174. Still open: the double US$77 charge in August, Aug 6
-  and Aug 13. Worth asking Skool support for the second one back.
+  Money Saved as 174, done. The double US$77 charge (Aug 6 and Aug 13, VISA
+  0499): refund request emailed to help@skool.com on 2026-08-25 from Simon's
+  Gmail. Waiting on their reply. If it comes back, log 77 in Money Saved.
 - Hostinger: canceled Aug 8.
 - Hack The Box VIP+: expired Aug 1.
 - Coursera IBM/ISC2: canceled Jul 13.
