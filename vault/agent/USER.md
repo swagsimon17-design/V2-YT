@@ -46,7 +46,9 @@ As needed:
 
 ## Doctors
 
-- Dr. Klostermann, family doctor. Next appointment not known yet.
+- Dr. Klostermann, family doctor. Handles all of it for right now, the
+  epilepsy included. No separate neurologist at the moment.
+  Next appointment not known yet.
 
 ## How he wants to be talked to
 
@@ -60,5 +62,4 @@ As needed:
 - Seizure details: type, what a bad one looks like, who to call. The rescue
   med is known; the people around it are not.
 - Dr. Klostermann: next appointment.
-- The epilepsy doctor, if there is one besides the family doctor.
 - Disability admin: which benefits, which forms, which deadlines.
