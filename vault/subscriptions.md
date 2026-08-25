@@ -11,7 +11,11 @@ but the amount was not opened yet.
   The one opened was CA$11.40. Order of CA$150 for the month. The silent one.
 - StudyFetch. Monthly, charged Jul 2 and Aug 2. Amount ?
 - GitHub, personal paid plan. Charged Aug 22. Amount ?
-- Google Cloud Platform. CA$100 on Aug 17 plus CA$25 on Aug 16, usage billing.
+- Google Cloud Platform, billing account 0107CC-A2AEFA-9ABAB9. Fresh account:
+  CA$25 prepayment Aug 16 with AUTO-RELOAD SWITCHED ON the same minute, then
+  CA$100 more on Aug 17. CA$125 in 36 hours. Which service is only visible in
+  the console Reports page, behind Simon's login. Auto-reload must go off.
+  Nearby in time: Retell AI usage Aug 8 and Aug 12, likely the same build.
 - Retell AI. Usage receipts Aug 8 and Aug 12. Amount ?
 - YouTube channel membership, Loi Liang Yang cybersecurity course, since Jul 3.
   Amount ?
