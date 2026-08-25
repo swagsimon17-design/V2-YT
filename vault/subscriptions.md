@@ -14,7 +14,9 @@ but the amount was not opened yet.
 - Google Cloud Platform, billing account 0107CC-A2AEFA-9ABAB9. Fresh account:
   CA$25 prepayment Aug 16 with AUTO-RELOAD SWITCHED ON the same minute, then
   CA$100 more on Aug 17. CA$125 in 36 hours. Which service is only visible in
-  the console Reports page, behind Simon's login. Auto-reload must go off.
+  the console Reports page, behind Simon's login. Auto-reload turned OFF by
+  Simon on 2026-08-25. Still open: read the Reports top line to name the
+  service that ate the CA$125.
   Nearby in time: Retell AI usage Aug 8 and Aug 12, likely the same build.
 - Retell AI. Usage receipts Aug 8 and Aug 12. Amount ?
 - YouTube channel membership, Loi Liang Yang cybersecurity course, since Jul 3.
