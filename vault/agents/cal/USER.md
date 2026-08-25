@@ -46,7 +46,11 @@ from what he tells me and what sits on his real calendar.
 
 ## Still empty, waiting on Simon
 
-- Routine, his actual lived one: [not yet known]
+- Routine, his actual lived one: "my routine is school on weekdays and
+  hockey saturday" (his words, logged 2026-08-25). That lines up with what
+  is known: weekdays are school days, CDI College online, where the 20
+  attendance hours a week land, and Saturday is the Sledgehammers game
+  already on his calendar.
 - Protected time: what never gets booked over. [not yet known]
 - Lead time he likes on reminders. [not yet known]
 
