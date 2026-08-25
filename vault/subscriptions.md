@@ -8,7 +8,8 @@ but the amount was not opened yet.
 
 - Anthropic Claude, Max plan. CA$142.96 a month, upgraded from Pro on Aug 22.
 - Anthropic auto recharge, extra usage. About 14 separate charges in August.
-  The one opened was CA$11.40. Order of CA$150 for the month. The silent one.
+  The one opened was CA$11.40. Order of CA$150 for the month. Turned OFF by
+  Simon on 2026-08-25. Both auto-reloads (this and Google Cloud) now dead.
 - StudyFetch. Monthly, charged Jul 2 and Aug 2. Amount ?
 - GitHub, personal paid plan. Charged Aug 22. Amount ?
 - Google Cloud Platform, billing account 0107CC-A2AEFA-9ABAB9. Fresh account:
