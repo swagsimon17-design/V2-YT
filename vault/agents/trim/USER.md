@@ -20,10 +20,9 @@ Active fixed plans:
 - Anthropic Claude Max (5x): CA$140.00 per month plan price. Last invoice
   CA$142.96 total with HST, paid Aug 22, 2026.
 - GitHub Copilot Pro: $10.00 USD per month, paid Aug 21, 2026.
-- ZOEY OS Explorer: $50.85 USD per month billed in CAD, last landed as
-  CA$73.28. Started Aug 16, 2026 after a trial.
 - Hostinger Premium web hosting: 16.79 CAD plus tax per month, paid
-  Aug 11, 2026. Cancellation requested Aug 25, 2026, see below.
+  Aug 11, 2026. Auto-renewal still on. It must be toggled off in hPanel
+  by Sep 11, 2026 or it charges again, see below.
 
 Usage-based bleed, bluntly: Claude auto-recharge top-ups, roughly a dozen
 in Aug 6 to 19 alone, plus Google Cloud auto-reloads of CA$25.00 and
@@ -38,7 +37,9 @@ $77.00, Skool Agentic AI for Founders $97.00, Skool Hacker Academy $9.00,
 StudyFetch CA$25.00 per month, DrumBeatsOnline, Hack The Box VIP+, CapCut,
 FL Cloud, Coursera IBM/ISC2 track, Retell AI paused at zero credit,
 Coursera Plus (cancelled Aug 22, 2026, see below), Skool Team Relentless
-$20.00 (single charge Apr 18, 2026, cancelled Apr 21, 2026, see below).
+$20.00 (single charge Apr 18, 2026, cancelled Apr 21, 2026, see below),
+ZOEY OS Explorer $50.85 USD per month (cancelled by Simon himself,
+confirmed in writing by ZOEY OS Aug 25, 2026, see below).
 
 Unclear: Whop FatihMakes Academy $9.99 (Aug 14, cadence unstated). On
 watch since Aug 25, 2026 to confirm whether it recurs.
@@ -67,12 +68,14 @@ Keep, used:
 
 Cancel, not used:
 
-- ZOEY OS Explorer: $50.85 USD per month, last landed CA$73.28.
-  Cancellation requested Aug 25, 2026. Simon authorized the send. The
-  Stripe Link billing portal (app.link.com) was unreachable from this
-  network, so the cancellation email went from his Gmail to
-  hello@zoeyos.com, their own reply-to address. Awaiting their
-  confirmation that no further charges will be made.
+- ZOEY OS Explorer: $50.85 USD per month, last landed CA$73.28. DONE.
+  Simon had already cancelled it himself before the Aug 25 email went
+  out. ZOEY's own reply (info@zoeyos.com, Aug 25, 2026, 17:19 UTC, on
+  the thread "Cancel my ZOEY OS Explorer subscription") says: "It
+  appears you already cancelled the subscription properly." Cancelled,
+  confirmed in writing. Watch item: any ZOEY charge landing after
+  Aug 25, 2026 contradicts their written reply and becomes a refund
+  case.
 - Coursera Plus: 68.0 CAD per month plus taxes. DONE. Already cancelled
   before this cut ran: Coursera's own confirmation email landed Aug 22,
   2026 (no-reply@t.learn.coursera.org, "Coursera Plus Cancellation
@@ -80,14 +83,16 @@ Cancel, not used:
   email states no further payments will be charged. Verified in his
   inbox Aug 25, 2026. Nothing sent, nothing left to do.
 - Hostinger Premium web hosting: 16.79 CAD plus tax per month.
-  Cancellation requested Aug 25, 2026. Simon authorized the send. One
-  email went from his Gmail to support@hostinger.com (the route that
-  worked for the VPS on Aug 12), Gmail message id 1a039e68b238c098,
-  asking to stop future renewals for invoice H_48634674 and confirm no
-  further charges. No refund asked, their emails state no money-back
-  window for this plan. Verified first that the plan hosts nothing: no
-  site built, no domain claimed, the board lives on Vercel. Awaiting
-  Hostinger's cancellation confirmation email.
+  Waiting on Simon's hands, deadline Sep 11, 2026. Their support
+  replied Aug 25, 2026, 17:10 UTC (team@support.hostinger.com):
+  auto-renewal cannot be switched off over email. It must be done in
+  hPanel. Profile, then Billing, open Subscriptions, find Premium Web
+  Hosting, switch off the auto-renewal toggle, confirm. The plan stays
+  active until September 11, 2026, and that date is the deadline: if
+  the toggle is still on then, it renews and charges. VPS services
+  unaffected. No refund asked, their emails state no money-back window
+  for this plan. Verified first that the plan hosts nothing: no site
+  built, no domain claimed, the board lives on Vercel.
 - Skool Team Relentless: $20.00 charged Apr 18, 2026. DONE, already
   dead. Skool's own notices landed Apr 21, 2026: "Subscription
   canceled... You will not be charged again" (message id
@@ -103,8 +108,9 @@ CA$158 a month before some taxes. Mixed billing, so roughly is the
 honest word. Skool Team Relentless turned out to be already dead since
 Apr 21, 2026, so it adds nothing. Coursera's 68.0 CAD is already
 secured: cancelled Aug 22, 2026, confirmed by Coursera, no further
-charges. Hostinger's cancellation email went out Aug 25, 2026, awaiting
-their confirmation.
+charges. ZOEY's CA$73.28 is secured too: Simon cancelled it himself,
+ZOEY confirmed in writing Aug 25, 2026. Hostinger's 16.79 CAD is the
+one still open. It needs Simon's toggle in hPanel before Sep 11, 2026.
 
 ## The drafts
 
@@ -115,9 +121,11 @@ send. Trim drafts, Simon sends. Trim sends nothing, ever.
 
 ## Open slots, waiting on Simon
 
-- Confirmation that the ZOEY and Hostinger cancellations went through,
-  so the vault can mark them dead. Coursera and Skool Team Relentless
-  are already confirmed dead.
+- The Hostinger toggle. Auto-renewal off in hPanel before Sep 11,
+  2026. That is the only cancellation still needing his hands. ZOEY,
+  Coursera and Skool Team Relentless are confirmed dead.
+- The ZOEY watch: if any ZOEY charge lands after Aug 25, 2026, it
+  contradicts their written reply and becomes a refund case.
 - The Whop cadence, once a second charge does or does not land.
 - The usage-based bleed (Claude top-ups, Google Cloud reloads) is real
   but is not a subscription to cancel. It stays in Sterling's lane.
