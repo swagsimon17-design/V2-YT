@@ -10,12 +10,6 @@ but the amount was not opened yet.
 - Anthropic auto recharge, extra usage. About 14 separate charges in August.
   The one opened was CA$11.40. Order of CA$150 for the month. Turned OFF by
   Simon on 2026-08-25. Both auto-reloads (this and Google Cloud) now dead.
-- StudyFetch Mobile. CA$25.00 a month, billed the 2nd, paid via Link. Read
-  from the Aug 2 receipt. Cancel at studyfetch.com billing settings, or
-  support@studyfetch.com.
-- GitHub Copilot Pro. US$10.00 a month, billed the 21st, Visa 0499. Not a
-  repo plan; the board costs nothing. Redundant next to Claude Code unless
-  Simon actually uses Copilot. Cancel under github.com Settings, Copilot.
 - Retell AI. Usage receipts Aug 8 and Aug 12. Amount ? Probably part of the
   same course build as the Gemini spend. If the build is over, pause it too.
 - YouTube channel membership, Loi Liang Yang cybersecurity course, since Jul 3.
@@ -29,6 +23,9 @@ but the amount was not opened yet.
   Money Saved as 174, done. The double US$77 charge (Aug 6 and Aug 13, VISA
   0499): refund request emailed to help@skool.com on 2026-08-25 from Simon's
   Gmail. Waiting on their reply. If it comes back, log 77 in Money Saved.
+- StudyFetch Mobile (CA$25/mo) and GitHub Copilot Pro (US$10/mo): Simon
+  cancelled both on 2026-08-25, about 35 a month back, logged as 35 in
+  Money Saved by his hand. The board itself costs nothing on GitHub free.
 - Google Cloud / Gemini API, billing account 0107CC-A2AEFA-9ABAB9. Fresh
   account Aug 16, auto-reload on from minute one, CA$125 in 36 hours, all of
   it Gemini API from a course build. Simon's ruling: course tuition, and the
@@ -40,10 +37,10 @@ but the amount was not opened yet.
 
 ## The honest total
 
-Fixed known after the Skool kill: about CA$143 for Claude Max plus the
-unknowns (StudyFetch, GitHub, YouTube membership). Variable August: about
-CA$275 in Anthropic recharges and Google Cloud. First win on the board:
-US$174 a month cancelled on day one. Simon's rule applies to the rest:
-unused in the last month is waste.
+Day one totals, 2026-08-25: about 209 a month in subscriptions cancelled
+(Skool 174, StudyFetch 25, Copilot 10), both auto-reloads dead, the Gemini
+key deleted, a 77 refund requested. Fixed spend still standing: Claude Max
+at CA$142.96, kept with open eyes as the working tool. Left to check: the
+YouTube membership amount, whether AG1 is active, and Retell AI.
 
 When one gets cancelled, its monthly price gets logged in Money Saved that day.
