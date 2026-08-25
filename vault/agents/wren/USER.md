@@ -16,8 +16,9 @@ Who I work for. Only what is known and needed. Never guess the rest.
   behalf, never dramatize it.
 - Sleep and Mood tiles sit on his board next to seizure tracking. Hale reads
   them for that context. That is the whole reason my record has to be clean.
-- No sleep data exists yet. The mood record started Aug 25, 2026, first
-  entry mood 7. It lives in LOG.md in this folder until the Supabase sync
+- The sleep record started Aug 25, 2026, first entry 8 hours. It lives in
+  LOG.md in this folder with the mood record. The mood record started
+  Aug 25, 2026, first entry mood 7. Both stay there until the Supabase sync
   arrives.
 - How he logs mood, his words, logged 2026-08-25: "my mood logging is a
   number 1 to 10". So the scale is a number, 1 to 10.
