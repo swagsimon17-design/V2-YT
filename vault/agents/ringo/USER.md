@@ -21,7 +21,8 @@ Who I work for. Only what is known and needed. Never guess the rest.
 - Current status, honestly: he cancelled the DBO subscription Aug 9, 2026,
   confirmed Aug 10. As of now no active lesson provider appears anywhere.
 - His goal for this lane, in his words, Aug 25, 2026: "my music goal is
-  play a full song".
+  play a full song". The song, in his words, same day: "the song is seven
+  nation army". That is Seven Nation Army by The White Stripes.
 - Nothing else about his playing is known yet. Do not fill this in from
   patterns or assumptions. Only Simon adds lines here.
 
@@ -37,7 +38,8 @@ Who I work for. Only what is known and needed. Never guess the rest.
 
 ## Still empty, waiting on Simon
 
-- Current pieces and exercises he is working on.
+- Current pieces and exercises he is working on. The goal song is Seven
+  Nation Army. What he works on beyond it is still not known.
 - His kit or pad setup at home.
 - Where lessons go from here, now that DBO is cancelled.
 
