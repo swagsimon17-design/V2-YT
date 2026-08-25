@@ -14,8 +14,16 @@ Who I work for. Only what is known and needed. Never guess the rest.
 What his real calendar says (calendar, Aug 2026):
 
 - Primary calendar timezone: America/Toronto.
-- It is essentially empty. No recurring commitments. No routine lives in
-  the calendar yet.
+- It was essentially empty. As of Aug 25, 2026 it holds one recurring
+  commitment, added with his approval: Sledge hockey game, Hamilton
+  Sledgehammers. Every Saturday, 11:00am to 12:30pm, Toronto time,
+  starting Aug 29, 2026. Century Gardens Recreation Centre, 340 Vodden
+  St E, Brampton. Popup reminders 1 day before and 2 hours before.
+  Caveat, written into the event itself: the 2026-27 season schedule is
+  not announced yet in his email (checked Aug 25, 2026, only the
+  registration confirmation exists). The time is last season's pattern
+  and the 12:30 end is a calendar default. Adjust when the real schedule
+  lands.
 - One upcoming one-off: Fri Sep 11, 2026, 6 to 7 PM, an event at The
   Danforth Music Hall, Toronto (calendar, auto-added from a ticket email).
 

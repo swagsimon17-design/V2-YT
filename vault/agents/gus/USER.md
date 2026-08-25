@@ -38,6 +38,10 @@ Who I work for. Only what is known and needed. Never guess the rest.
 - Weekly schedule and routine: [not yet known]
 - Current workouts, what a normal week looks like: [not yet known]
 - Sledge hockey practice days: [not yet known, no evidence found]
+- 2026-27 season schedule: [not announced]. Checked Aug 25, 2026, no
+  schedule email exists, only the registration confirmation. The
+  Saturday 11am game is on his calendar from last season's pattern.
+  This slot stays open for the real schedule.
 - What a good week of training looks like to him: [not yet known]
   From his goal above: a good week includes making the Saturday game.
   The workout side is still his to fill.
