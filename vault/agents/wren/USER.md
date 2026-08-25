@@ -20,7 +20,8 @@ Who I work for. Only what is known and needed. Never guess the rest.
   Simon logs. Day one is whenever he says it is.
 - How he logs mood, his words, logged 2026-08-25: "my mood logging is a
   number 1 to 10". So the scale is a number, 1 to 10.
-  - What 1 and 10 mean to him: [not yet known]
+  - What 1 and 10 mean to him, his words, logged 2026-08-25: "10 is best".
+    So 10 is best, 1 is the worst kind of day.
 
 ## How he wants to be talked to
 
