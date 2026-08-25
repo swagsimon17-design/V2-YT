@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" style="background: #000000; color-scheme: dark;">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#000000" />
+<title>Talk</title>
+
+<!--
+  TALK - Simon's talk helper, version one.
+  Type, press Speak, the phone says it out loud. Tap a saved phrase and it
+  speaks instantly. Built for the person who cannot speak, by the person who
+  cannot speak.
+
+  Speech comes from the browser's own voice (speechSynthesis). No account,
+  no key, no internet needed after the page loads.
+
+  Saved phrases live in this device's storage for now (talk.phrases). The
+  starter phrases below always show; saved ones stack after them.
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg: #000000;
+    --bg-elevated: #0a0a0a;
+    --fg: #ffffff;
+    --fg-dim: #9ca3af;
+    --mint: #6EE7B7;
+    --mint-hover: #5dd6a6;
+    --mint-ink: #042a1c;
+    --line: rgba(255, 255, 255, 0.1);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Inter', system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+    gap: 14px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  header { display: flex; align-items: baseline; gap: 10px; }
+  header h1 { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; }
+  header span { font-size: 13px; color: var(--fg-dim); }
+
+  #box {
+    width: 100%;
+    min-height: 110px;
+    background: var(--bg-elevated);
+    color: var(--fg);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 16px;
+    font: inherit;
+    font-size: 22px;
+    line-height: 1.4;
+    resize: none;
+    outline: none;
+  }
+  #box:focus { border-color: var(--mint); }
+
+  .row { display: flex; gap: 10px; }
+  button {
+    font: inherit;
+    font-weight: 600;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #speak {
+    width: 100%;
+    background: var(--mint);
+    color: var(--mint-ink);
+    font-size: 22px;
+    padding: 18px;
+  }
+  #speak:active { background: var(--mint-hover); }
+  .quiet {
+    flex: 1;
+    background: var(--bg-elevated);
+    color: var(--fg-dim);
+    border: 1px solid var(--line);
+    font-size: 15px;
+    padding: 14px 0;
+  }
+  .quiet:active { color: var(--fg); }
+
+  #phrases { display: flex; flex-wrap: wrap; gap: 8px; overflow-y: auto; }
+  .chip {
+    background: var(--bg-elevated);
+    color: var(--fg);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 12px 18px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .chip:active { border-color: var(--mint); color: var(--mint); }
+  .chip .x { color: var(--fg-dim); margin-left: 8px; font-weight: 700; }
+
+  #note { font-size: 13px; color: var(--fg-dim); }
+  #note.warn { color: #fbbf24; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Talk</h1>
+  <span>type it, it says it</span>
+</header>
+
+<textarea id="box" autofocus placeholder="Type here, then Speak. Enter speaks too." aria-label="Text to speak"></textarea>
+
+<button id="speak">Speak</button>
+
+<div class="row">
+  <button id="again" class="quiet" title="Say the last thing again">Again</button>
+  <button id="save" class="quiet" title="Keep the typed text as a phrase">Keep</button>
+  <button id="clear" class="quiet">Clear</button>
+</div>
+
+<div id="phrases" aria-label="Saved phrases, tap to speak"></div>
+
+<p id="note">Tap a phrase to speak it. "Keep" saves what you typed as a new phrase. Hold a saved phrase to remove it.</p>
+
+<script>
+  var STARTERS = [
+    'Yes', 'No', 'Thank you', 'One moment please',
+    'I don’t speak. I use this app to talk.',
+    'Can you write it down for me?'
+  ];
+  var KEY = 'talk.phrases';
+  var box = document.getElementById('box');
+  var note = document.getElementById('note');
+  var last = '';
+
+  function phrases() {
+    try { return JSON.parse(localStorage.getItem(KEY)) || []; }
+    catch (e) { return []; }
+  }
+  function setPhrases(list) {
+    try { localStorage.setItem(KEY, JSON.stringify(list)); } catch (e) {}
+  }
+
+  function speak(text) {
+    text = (text || '').trim();
+    if (!text) return;
+    if (!('speechSynthesis' in window)) {
+      note.textContent = 'This browser has no voice. Try Chrome or Safari.';
+      note.className = 'warn';
+      return;
+    }
+    speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 1;
+    speechSynthesis.speak(u);
+    last = text;
+  }
+
+  function render() {
+    var holder = document.getElementById('phrases');
+    holder.innerHTML = '';
+    var saved = phrases();
+    STARTERS.concat(saved).forEach(function (text, i) {
+      var isSaved = i >= STARTERS.length;
+      var b = document.createElement('button');
+      b.className = 'chip';
+      b.textContent = text;
+      b.addEventListener('click', function () { speak(text); });
+      if (isSaved) {
+        // hold to remove, only for phrases the user added
+        var t;
+        var down = function () {
+          t = setTimeout(function () {
+            var list = phrases();
+            list.splice(i - STARTERS.length, 1);
+            setPhrases(list);
+            render();
+          }, 700);
+        };
+        var up = function () { clearTimeout(t); };
+        b.addEventListener('pointerdown', down);
+        b.addEventListener('pointerup', up);
+        b.addEventListener('pointerleave', up);
+      }
+      holder.appendChild(b);
+    });
+  }
+
+  document.getElementById('speak').addEventListener('click', function () { speak(box.value); });
+  document.getElementById('again').addEventListener('click', function () { speak(last); });
+  document.getElementById('clear').addEventListener('click', function () { box.value = ''; box.focus(); });
+  document.getElementById('save').addEventListener('click', function () {
+    var text = box.value.trim();
+    if (!text) return;
+    var list = phrases();
+    if (list.indexOf(text) === -1 && STARTERS.indexOf(text) === -1) {
+      list.push(text);
+      setPhrases(list);
+      render();
+    }
+  });
+  box.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); speak(box.value); }
+  });
+
+  render();
+</script>
+
+</body>
+</html>
