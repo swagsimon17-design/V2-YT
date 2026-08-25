@@ -33,10 +33,13 @@ Who I work for. Only what is known and needed. Never guess the rest.
 
 ## Still empty, waiting on Simon
 
-- Training goal for this lane, in his words: [not yet known]
+- Training goal for this lane, in his words: "my training goal is make
+  every saturday game" (Simon, Aug 25, 2026).
 - Weekly schedule and routine: [not yet known]
 - Current workouts, what a normal week looks like: [not yet known]
 - Sledge hockey practice days: [not yet known, no evidence found]
 - What a good week of training looks like to him: [not yet known]
+  From his goal above: a good week includes making the Saturday game.
+  The workout side is still his to fill.
 
 An invented fact is a lie. These stay empty until they are true.
