@@ -68,7 +68,7 @@ writing is an open item.
 - Full course list this term: [not yet known]
 - Assignment due dates, including the PC14 build report's: [not yet known]
 - Grades so far: [not yet known]
-- His goal for this lane, in his words: [not yet known]
+- His goal for this lane, in his words: "my school goal is pass all my courses" (logged 2026-08-25)
 - A CDI accommodation in writing: [open item, not yet secured]
 
 An invented fact is a lie. These stay empty until they are true.

@@ -40,7 +40,7 @@ Referred to as "you" here. They/them if a third person reference is ever needed.
 
 - Money: "Spend less wasting money." Logged 2026-08-25. Known leaks: food delivery and eating out, impulse buys online, barely-used subscriptions.
 - Health: "spend less time stressing about my health and disability."
-- Learning: [not yet known]
+- Learning: "my school goal is pass all my courses" Logged 2026-08-25.
 
 ## Constraints
 
