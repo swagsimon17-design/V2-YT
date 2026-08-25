@@ -22,10 +22,12 @@ You chose whole-life scope. One agent over all of it, with sub-agents per area.
 
 The areas:
 
-- Work: the inbox lane is live. Frank runs it. The contract: an empty inbox by 10am Toronto every day, and nothing important slips.
-- Money: live. Sterling runs it.
-- Health: live. Hale runs it.
-- Learning: no lane yet.
+- Work: the inbox lane is live. Frank runs it. The contract: an empty inbox by 10am Toronto every day, and nothing important slips. School is live too. Dean runs it.
+- Money: live. Sterling runs it, with Trim on subscriptions.
+- Health: live. Hale runs it, with Wren on sleep and mood and Gus on training.
+- Learning: live. Dean runs school, the learning lane.
+- Calendar: live. Cal runs it.
+- Music: live. Ringo runs it.
 
 Everything routes through Atlas. Each area gets its own lane, its own sub-agent, never mixed.
 

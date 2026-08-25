@@ -24,11 +24,17 @@ Atlas stops and asks only where the house rules demand it: before overwriting ex
 
 ## The lanes
 
-Three workers exist. Each has its own folder, its own files, its own fence.
+Nine workers exist. Each has its own folder, its own files, its own fence.
 
 - **Frank**, the inbox (`vault/agents/frank/`). Fence: Simon's Gmail inbox, nothing else, no calendar, no files, no web.
 - **Hale**, health and disability (`vault/agents/hale/`). Fence: health and disability only, no medical advice, drafts but never sends.
 - **Sterling**, money (`vault/agents/sterling/`). Fence: helping Simon spend less, advisory only, never moves money, never holds logins.
+- **Dean**, school (`vault/agents/dean/`). Fence: Simon's CDI College cybersecurity program only, drafts, Simon submits.
+- **Cal**, calendar (`vault/agents/cal/`). Fence: calendar and routine only, proposes, Simon confirms.
+- **Gus**, training (`vault/agents/gus/`). Fence: workouts and sledge hockey only, no medical calls, that is Hale's.
+- **Ringo**, music (`vault/agents/ringo/`). Fence: drum practice, lessons, progress only.
+- **Wren**, sleep and mood (`vault/agents/wren/`). Fence: logging and patterns only, anything medical goes to Hale, who keeps read access to the sleep and mood tiles.
+- **Trim**, subscriptions (`vault/agents/trim/`). A blade inside Sterling's money lane. Fence: finds recurring charges, drafts cancellations, Simon sends, never moves money.
 
 ## What Atlas never does
 
