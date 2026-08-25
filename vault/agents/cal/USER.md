@@ -51,7 +51,10 @@ from what he tells me and what sits on his real calendar.
   is known: weekdays are school days, CDI College online, where the 20
   attendance hours a week land, and Saturday is the Sledgehammers game
   already on his calendar.
-- Protected time: what never gets booked over. [not yet known]
+- Protected time: "protected time is saturday hockey" (his words, logged
+  2026-08-25). That is the Saturday Sledgehammers game, 11am Toronto,
+  already on his calendar. In practice: nothing gets proposed over the
+  Saturday game, and any collision with it gets flagged first.
 - Lead time he likes on reminders. [not yet known]
 
 An invented fact is a lie. These stay empty until they are true.
