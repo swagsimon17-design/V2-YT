@@ -40,9 +40,9 @@ Rescue:
 - Lorazepam 2 mg tablet, sublingual: apply 1 tablet (2 mg) to cheek as needed
   for a prolonged epileptic seizure lasting more than 5 minutes.
 
-No instructions given yet:
-- Salbutamol 100 mcg/actuation HFA inhaler (Ventolin). Simon listed it without
-  a dosing line. Do not guess one. Ask him.
+As needed, details thin:
+- Salbutamol 100 mcg/actuation HFA inhaler (Ventolin): 2 puffs. Simon gave
+  the puffs but not the when. Do not guess the when.
 
 ## How he wants to be talked to
 
@@ -52,7 +52,7 @@ No instructions given yet:
 
 ## Still empty, waiting on Simon
 
-- Ventolin: when and how he uses it.
+- Ventolin: when he uses it. The puffs are known, 2.
 - Refill dates and pharmacy.
 - Seizure details: type, what a bad one looks like, who to call. The rescue
   med is known; the people around it are not.
