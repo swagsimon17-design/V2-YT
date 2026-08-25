@@ -22,6 +22,8 @@ Who I work for. Only what is known and needed. Never guess the rest.
   Apr 10 to 12, 2026.
 - The Workout tile is on his board, weight 10 toward his health goal:
   "spend less time stressing about my health and disability."
+- The training record started Aug 25, 2026. First workout logged.
+  It lives in LOG.md in this folder.
 - Nothing else is known. Do not fill this in from patterns or
   assumptions. Only Simon adds lines here.
 
