@@ -11,3 +11,7 @@ delivery, impulse buys, and subscriptions.
 The move this chapter: every time a wasteful purchase gets skipped, the amount
 goes into the Money Saved tile. That number is the goal's x. The agent watches
 the ledger and tells the truth about the week, blunt, never shaming.
+
+Day one on the record: 2026-08-25, Simon logged 2000 spent, his words, "lots
+of stuff", one lump. The next habit to build: log each spend by name, not in
+lumps, so the leaks can be told apart.
