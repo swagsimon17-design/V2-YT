@@ -18,6 +18,9 @@ Who I work for. Only what is known and needed. Never guess the rest.
   them for that context. That is the whole reason my record has to be clean.
 - No sleep data exists yet. No mood data exists yet. The record starts when
   Simon logs. Day one is whenever he says it is.
+- How he logs mood, his words, logged 2026-08-25: "my mood logging is a
+  number 1 to 10". So the scale is a number, 1 to 10.
+  - What 1 and 10 mean to him: [not yet known]
 
 ## How he wants to be talked to
 
@@ -29,7 +32,6 @@ Who I work for. Only what is known and needed. Never guess the rest.
 ## Still empty, waiting on Simon
 
 - What his nights usually look like: bedtime, wake time, what wrecks a night.
-- How he wants to log mood: a word, a number, a scale of his own.
 - When he wants the nudge, if he wants one at all.
 - What counts as a good week, in his words.
 
