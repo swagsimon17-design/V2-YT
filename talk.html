@@ -51,9 +51,21 @@
     margin: 0 auto;
   }
 
-  header { display: flex; align-items: baseline; gap: 10px; }
+  header { display: flex; align-items: center; gap: 10px; }
   header h1 { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; }
   header span { font-size: 13px; color: var(--fg-dim); }
+  #voice {
+    margin-left: auto;
+    max-width: 45%;
+    background: var(--bg-elevated);
+    color: var(--fg-dim);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    font: inherit;
+    font-size: 13px;
+    padding: 8px 10px;
+    outline: none;
+  }
 
   #box {
     width: 100%;
@@ -129,6 +141,9 @@
 <header>
   <h1>Talk</h1>
   <span>type it, it says it</span>
+  <select id="voice" aria-label="Choose the voice">
+    <option value="">Default voice</option>
+  </select>
 </header>
 
 <textarea id="box" autofocus placeholder="Type here, then Speak. Enter speaks too." aria-label="Text to speak"></textarea>
@@ -196,9 +211,53 @@
     speechSynthesis.cancel();
     var u = new SpeechSynthesisUtterance(text);
     u.rate = 1;
+    var wanted = chosenVoice();
+    if (wanted) u.voice = wanted;
     speechSynthesis.speak(u);
     last = text;
   }
+
+  // The voices belong to the device. English ones list first, the rest after.
+  var VKEY = 'talk.voice';
+  var voiceSel = document.getElementById('voice');
+  function chosenVoice() {
+    var name = '';
+    try { name = localStorage.getItem(VKEY) || ''; } catch (e) {}
+    if (!name || !('speechSynthesis' in window)) return null;
+    var match = null;
+    speechSynthesis.getVoices().forEach(function (v) {
+      if (v.name === name) match = v;
+    });
+    return match;
+  }
+  function fillVoices() {
+    if (!('speechSynthesis' in window)) return;
+    var voices = speechSynthesis.getVoices();
+    if (!voices.length) return;
+    var saved = '';
+    try { saved = localStorage.getItem(VKEY) || ''; } catch (e) {}
+    voices = voices.slice().sort(function (a, b) {
+      var ae = a.lang.indexOf('en') === 0 ? 0 : 1;
+      var be = b.lang.indexOf('en') === 0 ? 0 : 1;
+      return ae - be || a.name.localeCompare(b.name);
+    });
+    voiceSel.innerHTML = '<option value="">Default voice</option>';
+    voices.forEach(function (v) {
+      var o = document.createElement('option');
+      o.value = v.name;
+      o.textContent = v.name + ' (' + v.lang + ')';
+      if (v.name === saved) o.selected = true;
+      voiceSel.appendChild(o);
+    });
+  }
+  if ('speechSynthesis' in window) {
+    fillVoices();
+    speechSynthesis.onvoiceschanged = fillVoices;
+  }
+  voiceSel.addEventListener('change', function () {
+    try { localStorage.setItem(VKEY, voiceSel.value); } catch (e) {}
+    speak('This is my voice now.');
+  });
 
   function chip(text, savedIndex) {
     var b = document.createElement('button');
