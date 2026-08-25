@@ -16,6 +16,9 @@ email about three short weeks in a row arrived Aug 3, 2026 (CDI emails,
 Aug 2026). Dean's first job every week is those 20 hours. Everything else
 in this file comes second.
 
+The attendance record started Aug 25, 2026. It lives in LOG.md in this
+folder, one row per day.
+
 ## School
 
 - Program: Cybersecurity Specialist Diploma, CDI College. 100 percent
